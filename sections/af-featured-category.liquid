@@ -1,63 +1,63 @@
 {% style %}
-  .partner-section .grid__item {
-    margin-right:6px;
-  }
-  .partner-section .medium-up--one-quarter {
-    width:calc(25% - 6px)
+    .partner-section .grid__item {
+      margin-right:6px;
+    }
+    .partner-section .medium-up--one-quarter {
+      width:calc(25% - 6px)
 
-  }
-  .index-section:has(.vintage-military-{{ section.id }}) {
-    padding: 0;
-  }
-  .shopify-section:has(.vintage-military-{{ section.id }}) {
-    padding:100px 0;
-    background-color: {{ section.settings.background-color }};
-    background-image: url({{ section.settings.bg-image | image_url:width:auto }});
-    color: {{ section.settings.text-color }};
-    background-position: center;
-    background-size:cover;l
-    background-repeat: no-repeat;
-  }
+    }
+    .index-section:has(.vintage-military-{{ section.id }}) {
+      padding: 0;
+    }
+    .shopify-section:has(.vintage-military-{{ section.id }}) {
+      padding:100px 0;
+      background-color: {{ section.settings.background-color }};
+      background-image: url({{ section.settings.bg-image | image_url:width:auto }});
+      color: {{ section.settings.text-color }};
+      background-position: center;
+      background-size:cover;l
+      background-repeat: no-repeat;
+    }
 
 
-  .shopify-section:has(.vintage-military-{{ section.id }}) {
-    background-color: {{ section.settings.backgroundcolor }};
-    color: {{ section.settings.fontcolor }};
-    background-image: url({{ section.settings.image | image_url:width:auto }});
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-  }
+    .shopify-section:has(.vintage-military-{{ section.id }}) {
+      background-color: {{ section.settings.backgroundcolor }};
+      color: {{ section.settings.fontcolor }};
+      background-image: url({{ section.settings.image | image_url:width:auto }});
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
 
-.vintage-military-{{ section.id }} .grid {
-  display: flex;
-  flex-wrap: wrap;
-} 
-
-  .vintage-military-{{ section.id }} .grid__item  {
-    flex:1 0 21%;
-border-radius: 10px;
-padding: 10px; 
-background-color: {{ section.settings.frame-color }}; 
-margin-bottom:6px;
-  }
-  .vintage-military-{{ section.id }} .grid-product__image-mask .grid__image-ratio--square  {
-border-radius: 10px; 
-overflow:hidden;
-padding: 10px; 
-background-color: white;
-  }
-.vintage-military-{{ section.id }} .grid__item .sale-price  {
-background-color: {{ section.settings.text-color }}; 
-  }
-  
-
-  .vintage-military-{{ section.id }} a {
-    color: {{ section.settings.text-color }}
-  }
   .vintage-military-{{ section.id }} .grid {
-    margin:0;
+    display: flex;
+    flex-wrap: wrap;
   }
+
+    .vintage-military-{{ section.id }} .grid__item  {
+      flex:1 0 21%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: {{ section.settings.frame-color }};
+  margin-bottom:6px;
+    }
+    .vintage-military-{{ section.id }} .grid-product__image-mask .grid__image-ratio--square  {
+  border-radius: 10px;
+  overflow:hidden;
+  padding: 10px;
+  background-color: white;
+    }
+  .vintage-military-{{ section.id }} .grid__item .sale-price  {
+  color: {{ section.settings.text-color }};
+    }
+
+
+    .vintage-military-{{ section.id }} a {
+      color: {{ section.settings.text-color }}
+    }
+    .vintage-military-{{ section.id }} .grid {
+      margin:0;
+    }
 {% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
@@ -129,14 +129,12 @@ background-color: {{ section.settings.text-color }};
                           <div class="grid-product__price">$29</div>
                         </div>
                       </a>
-
                     </div>
-
                   </div>
                 {%- endfor -%}
               </div>
 
-                      <button href="{{ product.url | within: collection }}" class="grid-product__link">View this item</button> 
+              <button href="{{ product.url | within: collection }}" class="grid-product__link">View this item</button>
             </div>
 
           {% else %}
@@ -191,7 +189,7 @@ background-color: {{ section.settings.text-color }};
       "type": "color",
       "id": "background-color",
       "label": "Background Color",
-      "default":"#fff"
+      "default": "#fff"
     },
     {
       "type": "image_picker",
@@ -202,19 +200,19 @@ background-color: {{ section.settings.text-color }};
       "type": "color",
       "id": "text-color",
       "label": "Text Color",
-      "default":"#fff"
+      "default": "#fff"
     },
     {
       "type": "color",
       "id": "frame-color",
       "label": "Frame Color",
-      "default":"#0a406c"
+      "default": "#0a406c"
     },
     {
       "type": "color",
       "id": "button-color",
       "label": "Frame Button Color",
-      "default":"#01589f"
+      "default": "#01589f"
     },
     {
       "type": "collection",
