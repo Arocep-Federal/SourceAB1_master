@@ -79,7 +79,7 @@
         "title": "Filing Solutions",
         "subtitle": "",
         "background-color": "#ffffff",
-        "text-color": "#002974",
+        "text-color": "#ffffff",
         "frame-color": "#002243",
         "button-color": "",
         "home_featured_products": "file-folders-portable-storage-box-files",
@@ -195,7 +195,7 @@
     "af_featured_category_ADVbRe": {
       "type": "af-featured-category",
       "custom_css": [
-        "h2 {color: blue}"
+        "h2 {color: blue;}"
       ],
       "settings": {
         "title": "Medical Grade Gloves",
