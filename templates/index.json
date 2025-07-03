@@ -33,11 +33,11 @@
         "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
         "background-color": "#ffffff",
         "text-color": "#002974",
+        "frame-color": "#0a406c",
+        "button-color": "",
         "home_featured_products": "abilityone-catalog",
         "per_row": 4,
-        "rows": 2,
-        "view_all": true,
-        "divider": false
+        "rows": 2
       }
     },
     "partner_text_rUXN8d": {
@@ -80,11 +80,11 @@
         "subtitle": "",
         "background-color": "#ffffff",
         "text-color": "#002974",
+        "frame-color": "",
+        "button-color": "",
         "home_featured_products": "file-folders-portable-storage-box-files",
         "per_row": 4,
-        "rows": 1,
-        "view_all": true,
-        "divider": false
+        "rows": 1
       }
     },
     "partner_text_with_icons_7dEt3L": {
@@ -200,11 +200,11 @@
         "subtitle": "",
         "background-color": "#cd1c1c",
         "text-color": "#ffffff",
+        "frame-color": "",
+        "button-color": "",
         "home_featured_products": "ink-toners",
         "per_row": 4,
-        "rows": 1,
-        "view_all": true,
-        "divider": false
+        "rows": 1
       }
     }
   },
