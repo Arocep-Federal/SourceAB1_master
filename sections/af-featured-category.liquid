@@ -43,13 +43,13 @@
     }
 
     .vintage-military-{{ section.id }} .grid-product__content { 
-    
       display:flex;
       flex-direction:column;
     }
+    .vintage-military-{{ section.id }} .grid-product__meta {
+      flex-grow:1;
+    }
     .vintage-military-{{ section.id }} .grid__item .view-btn  {
-      align-self:flex-end;
-      flex:1;
   border-radius: 5px;
   background-color: {{ section.settings.button-color }};
   display:block;
@@ -63,6 +63,7 @@
   padding: 10px;
   background-color: white;
     }
+
   .vintage-military-{{ section.id }} .grid__item .sale-price  {
   color: {{ section.settings.text-color }};
     }
