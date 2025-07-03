@@ -115,9 +115,9 @@
             <div class="grid__item">
               <div class="grid grid--uniform">
                 {%- for i in (1..product_limit) -%}
-                  <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
-                    <div class="grid-product__content">
-                      <a href="{{ product.url | within: collection }}" class="grid-product__link">
+                  {% comment %} <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
+                    {% comment %} <div class="grid-product__content">
+                      {% comment %} <a href="{{ product.url | within: collection }}" class="grid-product__link">
                         {% comment %} <div class="grid-product__image-mask">
                           {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                           <div class="image-wrap">
@@ -128,9 +128,9 @@
                           <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
                           <div class="grid-product__price">$29</div>
                         </div> {% endcomment %}
-                      </a>
-                    </div>
-                  </div>
+                      </a> {% endcomment %}
+                    </div> {% endcomment %}
+                  </div> {% endcomment %}
                 {%- endfor -%}
               </div>
 
