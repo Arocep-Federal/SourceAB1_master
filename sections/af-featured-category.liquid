@@ -125,6 +125,8 @@ background-color: white;
                           <div class="grid-product__price">$29</div>
                         </div>
                       </a>
+
+                      <a href="{{ product.url | within: collection }}" class="grid-product__link">View this item</a>
                     </div>
                   </div>
                 {%- endfor -%}
