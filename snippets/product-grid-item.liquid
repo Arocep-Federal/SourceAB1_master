@@ -234,7 +234,7 @@
         {%- endif -%}
       </div>
     </a>
-  <a href="{{ product.url | within: collection }}" class="">View this item</a>
+  <a href="{{ product.url | within: collection }}" class="view-btn">View this item</a>
 
     {% unless type == 'horizontal' %}
       {%- if settings.enable_swatches -%}
