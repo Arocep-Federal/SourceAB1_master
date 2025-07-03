@@ -29,7 +29,12 @@
     background-repeat: no-repeat;
   }
 
-  .vintage-military-{{ section.id }} .grid-product__content  {
+.vintage-military-{{ section.id }} .grid .grid--uniform
+  display: flex;
+} 
+
+  .vintage-military-{{ section.id }} .grid-item  {
+    flex:1;
 border-radius: 10px;
 padding: 10px; 
 background-color: {{ section.settings.frame-color }}; 
