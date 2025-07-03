@@ -1,0 +1,180 @@
+
+
+{% style %}
+    
+    .text-block--{{ section.id }} {
+        background-color: {{ section.settings.backgroundcolor }};
+        color: {{ section.settings.fontcolor }};
+    }
+
+    {% for block in section.blocks %}
+        .text-block--{{block.id}}{
+            margin:0 40px;
+        }
+    {% endfor %}
+    
+    .text-block--{{ section.id }} .left {
+        margin:0 5vw;
+        text-align:left;
+    }
+    .text-block--{{ section.id }} .center {
+        margin:0 5vw;
+        text-align:center; 
+    }
+    .text-block--{{ section.id }} .right {
+        margin:0 5vw;
+        text-align:right;
+    }
+
+
+  @media only screen and (min-width:1024px){
+    
+    
+    .text-block--{{ section.id }} .left {
+        padding-right:40vw;
+    }
+    .text-block--{{ section.id }} .right {
+        padding-left:40vw;
+    }
+    
+    .text-block--{{ section.id }} .center {
+        padding:0 20vw;
+    }
+  }
+
+  {% if section.settings.top_padding == false %}
+    #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
+  {% endif %}
+  {% if section.settings.bottom_padding == false %}
+    #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
+  {% endif %}
+{% endstyle %}
+
+<div class="index-section text-block text-block--{{ section.id }}">
+    {%- for block in section.blocks -%}
+
+          {%- if block.settings.title != blank -%}
+            <div class="text-block {{ block.settings.layout }} text-block--{{ block.id }}">
+            {%- if block.settings.title != blank -%}
+                <h3>{{ block.settings.title }}</h3>
+            {% endif %}
+            {% if block.settings.text != blank %}
+                <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+            {% endif %}
+            {% if block.settings.button_label != blank %}
+
+            <div class="button_super {% if block.settings.buttolinkn_style == 'secondary' %}secondary{% endif %}">
+                <span class="super_button_circle"> </span>
+                <a href="{{ block.settings.button_link }}" class="button_super_inner">
+                <span class="button_text_container">
+                    {{ block.settings.button_label }}
+                </span>
+                </a>
+            </div> 
+            {% endif %}
+            </div>
+          {% endif %}
+      {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Text Block",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "top_padding",
+      "label": "t:sections.text-and-image.settings.top_padding.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "t:sections.text-and-image.settings.bottom_padding.label",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "backgroundcolor",
+      "label": "Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "fontcolor",
+      "label": "Text Color",
+      "default": "#fff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.text-columns.blocks.column.settings.title.label",
+          "default": "Example title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.text-columns.blocks.column.settings.text.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.text-columns.blocks.column.settings.button_label.label",
+          "default": "Optional button"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Layout",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

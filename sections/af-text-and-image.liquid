@@ -1,0 +1,347 @@
+{% style %}
+    {% if section.settings.top_padding == false %}
+      #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
+    {% endif %}
+    {% if section.settings.bottom_padding == false %}
+      #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
+    {% endif %}
+
+    #shopify-section-{{ section.id }} .index-section {
+      background-image:url({{ section.settings.bgimage | image_url:width:auto }});
+      background-size:cover;
+      background-repeat:no-repeat;
+      color: {{ section.settings.font_color }}
+    }
+    /* #shopify-section-{{ section.id }} .stripe {
+      width: 600px;
+      max-width:90vw;
+      overflow:hidden;
+      height:80px;
+      display:block;
+      position:absolute;
+      background-image:url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe.png?v=1726447603");
+      background-repeat:no-repeat;
+      background-position:top -10px right 0;
+      background-size:cover;
+      z-index:1;
+    } */
+
+    #shopify-section-{{ section.id }} .stripe {
+    position:absolute;
+    background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/distressed-stripe_vert_065dc948-13d3-435c-b32a-a8b39fbaaf5f.png?v=1726483783");
+    width:100px;
+    background-repeat:no-repeat;
+    background-position:top left;
+    z-index:2;
+    /* top:0; */
+    right:20px;
+    left:auto;
+    height:800px
+  }
+
+
+
+
+    #shopify-section-{{ section.id }} .border-style .feature-row__first-image {
+      position:relative;
+      max-width: 550px;
+      top:-175px;
+      right:0;
+      left:auto;
+      border:10px solid white;
+      border-radius:10px;
+      filter: grayscale(1);
+      transition:all .25s ease 0ms; 
+    }
+
+
+    #shopify-section-{{ section.id }} .border-style .feature-row__first-image:hover {
+      filter: grayscale(0);
+    }
+
+    #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
+      overflow:visible;
+      position:relative;
+      top:-70px;
+      z-index:2;
+    }
+
+
+    @media only screen and (max-width: 589px){
+      #shopify-section-{{ section.id }} .border-style .feature-row__first-image {
+      top:auto;
+    }
+
+
+    #shopify-section-{{ section.id }} .stripe {
+    opacity: .5
+    }
+    #shopify-section-{{ section.id }} .border-style .feature-row-wrapper {
+      overflow:visible;
+      top:auto;
+      padding-bottom:100px;
+    }
+    }
+{% endstyle %}
+
+<div class="stripe"></div>
+<div class="index-section {% if section.settings.image_style == 'border' %} border-style{% endif %}">
+  <div class="page-width feature-row-wrapper feature-row--{{ image_width }}">
+    {%- capture image_layout -%}
+      <div class="feature-row__item feature-row__images{% if placeholder_images %}feature-row__item--placeholder-images{% endif %}" data-aos>
+          {%- if section.settings.image != blank -%}
+            <div class="feature-row__first-image">
+              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
+                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;">
+                  {%- liquid
+                      assign size_variable = section.settings.image_width | append: 'vw'
+                      assign fallback = '100vw'
+                      assign image_width = section.settings.image_width | times: 1
+                      assign loading = section.settings.lazyload_images
+                      
+                  -%}
+                  {%- render 'image-element',
+                    img: section.settings.image,
+                    widths: '180, 360, 540, 750, 900, 1080',
+                    loading: loading,
+                    size_variable: size_variable,
+                    fallback: fallback,
+                    classes: 'feature-row__image',
+                  -%}
+                </div>
+              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
+            </div>
+          {%- endif -%}
+          
+          {%- if section.settings.image == blank -%}
+            <div class="placeholder-image-wrap">
+              <div class="image-wrap">
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            </div>
+          {%- endif -%}
+      </div>
+    {%- endcapture -%}
+
+    <div class="feature-row">
+      {%- if section.settings.layout == 'left' -%}
+        {{ image_layout }}
+      {%- endif -%}
+
+      <div
+        class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }} text-{{ section.settings.align_text }}"
+        data-aos
+      >
+        {%- if section.settings.subtitle != blank -%}
+          <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">[{{ section.settings.subtitle }}]</div>
+        {%- endif -%}
+        {%- if section.settings.title != blank -%}
+          <h2 class="appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
+        {%- endif -%}
+        {%- if section.settings.button_label != blank -%}
+          <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+           
+        
+            <div class="button_super {% if section.settings.button_style == 'secondary' %}secondary{% endif %}">
+              <span class="super_button_circle"> </span>
+              <a href="{{ section.settings.button_link }}" class="button_super_inner">
+                <span class="button_text_container">
+                  {{ section.settings.button_label }}
+                </span>
+              </a>
+            </div>
+          
+          
+          </div>
+
+
+          {% comment %} <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+            <a
+              href="{{ section.settings.button_link }}"
+              class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}"
+            >
+              {{ section.settings.button_label }}
+            </a>
+          </div> {% endcomment %}
+        {%- endif -%}
+      </div>
+
+      {%- if section.settings.layout == 'right' -%}
+        {{ image_layout }}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AF Text and Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_style",
+      "label": "Image Style",
+      "default": "border",
+      "options": [
+        {
+          "value": "border",
+          "label": "Border"
+        },
+        {
+          "value": "inline",
+          "label": "Inline"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "bgimage",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Image with text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+    },
+    {
+      "type": "color",
+      "id": "font_color",
+      "label": "Font Color",
+      "default": "#fff"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button Style",
+      "default": "primary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Align Text",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_width",
+      "label": "Image Width",
+      "default": "50",
+      "options": [
+        {
+          "value": "33",
+          "label": "Small"
+        },
+        {
+          "value": "50",
+          "label": "Medium"
+        },
+        {
+          "value": "66",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "default": "right",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "top_padding",
+      "label": "Top Padding",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_padding",
+      "label": "Bottom Padding",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "lazyload_images",
+      "label": "Lazy Load Images",
+      "info": "t:common.lazyload_images.info",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "AF Text and Image"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,192 @@
+{%- style -%}
+  .military-background--{{ section.id }} {
+    background:url({{ section.settings.image | image_url:width:auto }});
+    background-size:cover;
+    background-position:bottom;
+    background-blend-mode: luminosity;
+    background-color: {{ section.settings.vintage_military_overlay }};
+    height:650px;
+    width:100%;
+    position:relative;
+  }
+  .military-background--{{ section.id }} .kicker {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom:0;
+  }
+
+  .military-background--{{ section.id }} .hero__title h2 {
+    margin-bottom:0px;
+  }
+
+  .military-background--{{ section.id }} .hero__subtitle {
+    margin-top:0px;
+  }
+
+{%- endstyle -%}
+
+<div
+  class="hero military-background--{{ section.id }} af-vintage-military loaded"
+  data-section-id="{{ section.id }}"
+  data-aos="hero__animation"
+  loading="lazy"
+>
+  <div class="hero__media hero__media--{{ section.id }}">
+    <div class="hero__text-wrap hero__text-wrap--absolute">
+      <div class="page-width text-center">
+        <div class="hero__text-content {{ section.settings.text_align }}">
+       
+          {%- unless section.settings.headline == blank -%}
+            <div class="hero__title">
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  {%- unless section.settings.kicker == blank -%}
+                    <p class="kicker">{{ section.settings.kicker }}</p>
+                  {%- endunless -%}
+                  <h2>{{ section.settings.headline | newline_to_br }}</h2>
+                </div>
+                </div>
+              </div>
+          {%- endunless -%}
+
+          {%- unless section.settings.subheadline == blank -%}
+            <div class="hero__subtitle">
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  {{ section.settings.subheadline | escape }}
+                </div>
+              </div>
+            </div>
+          {%- endunless -%}
+
+          {%- unless section.settings.link_text == blank -%}
+            <div class="hero__link">
+              <div class="animation-cropper">
+                <div class="animation-contents">
+                  <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
+                    {{ section.settings.link_text | escape }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          {%- endunless -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AF Vintage Military Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "kicker",
+      "label": "Kicker",
+      "default": "Your Brand Story"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Vintage Military Hero"
+    },
+    {
+      "type": "text",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "with all the things..."
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "default": "vertical-center horizontal-center",
+      "options": [
+        {
+          "value": "vertical-center horizontal-left",
+          "label": "Center left"
+        },
+        {
+          "value": "vertical-center horizontal-center",
+          "label": "Center"
+        },
+        {
+          "value": "vertical-center horizontal-right",
+          "label": "Center right"
+        },
+        {
+          "value": "vertical-bottom horizontal-left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "vertical-bottom horizontal-center",
+          "label": "Bottom center"
+        },
+        {
+          "value": "vertical-bottom horizontal-right",
+          "label": "Bottom right"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Section link"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Button text",
+        "default": "Optional button"
+      },
+      {
+        "type": "select",
+        "id": "vintage_military_overlay",
+        "label": "Vintage Colorize",
+        "default": "none",
+        "options": [
+          {
+            "label": "Army Green",
+            "value": "#5f653e",
+          },
+          {
+            "label": "Marine Blue",
+            "value": "#091d33",
+          },
+          {
+            "label": "Vamp Red",
+            "value": "#34090a",
+          },
+          {
+            "label": "Sand Tan",
+            "value": "#c6b694",
+          },
+          {
+            "label": "Cement White",
+            "value": "#e2dfd1",
+          },
+          {
+            "label": "Gunmetal Grey",
+            "value": "#292929",
+          },
+          {
+            "label": "None",
+            "value": "none",
+          }
+        ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "AF Vintage Military Hero"
+    }
+  ]
+}
+{% endschema %}

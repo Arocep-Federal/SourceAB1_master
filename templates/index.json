@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "af_vintage_military_X6nPTr": {
+      "type": "af-vintage-military",
+      "custom_css": [],
+      "settings": {
+        "kicker": "The Federal",
+        "headline": "Distribution Channel of Choice",
+        "subheadline": "Empowering Procurement. Enabling Purpose.",
+        "text_align": "vertical-center horizontal-center",
+        "image": "shopify://shop_images/feature_sourceabilityone9.jpg",
+        "link": "shopify://pages/request-for-quote-1",
+        "link_text": "Get Procurement Support",
+        "vintage_military_overlay": "none"
+      }
+    },
+    "af_featured_category_mE6Phb": {
+      "type": "af-featured-category",
+      "custom_css": [
+        "h2 {color: #002974;}"
+      ],
+      "settings": {
+        "title": "Shop Best Sellers",
+        "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
+        "background-color": "#ffffff",
+        "text-color": "#002974",
+        "home_featured_products": "abilityone-catalog",
+        "per_row": 4,
+        "rows": 2,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "partner_text_rUXN8d": {
+      "type": "partner-text",
+      "blocks": {
+        "heading_VJYRUn": {
+          "type": "heading",
+          "settings": {
+            "title": "The AbilityOne Program"
+          }
+        },
+        "text_EhXWaU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>creates employment and training opportunities for 45,000 people across the country who are blind or have other significant disabilities through the sale of SKILCRAFT® and other products and services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VJYRUn",
+        "text_EhXWaU"
+      ],
+      "custom_css": [],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#006dc6",
+        "image": "shopify://shop_images/bg17-ab1.jpg",
+        "link": "",
+        "fontcolor": "#ffffff"
+      }
+    },
+    "af_featured_category_HpAaBm": {
+      "type": "af-featured-category",
+      "custom_css": [
+        "h2 {color: #002974;}"
+      ],
+      "settings": {
+        "title": "Filing Solutions",
+        "subtitle": "",
+        "background-color": "#ffffff",
+        "text-color": "#002974",
+        "home_featured_products": "file-folders-portable-storage-box-files",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "partner_text_with_icons_7dEt3L": {
+      "type": "partner-text-with-icons",
+      "blocks": {
+        "text_block_nXqfbW": {
+          "type": "text_block",
+          "settings": {
+            "icon": "thumbs-up",
+            "title": "Provide Jobs",
+            "text": "<p>Strive to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.</p>"
+          }
+        },
+        "text_block_GG8g87": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "Fair Market",
+            "text": "<p>Ensure AbilityOne products and services meet customer quality requirements at a fair market price.</p>"
+          }
+        },
+        "text_block_rJwhx4": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Easy Access",
+            "text": "<p>Work with both federal and commercial distributing agencies to ensure that AbilityOne products are easily identifiable and accessible.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_nXqfbW",
+        "text_block_GG8g87",
+        "text_block_rJwhx4"
+      ],
+      "custom_css": [
+        "h2 {color: #002974;}"
+      ],
+      "settings": {
+        "bg_color": "#d7ebff",
+        "image": "shopify://shop_images/bg22-ab1.jpg",
+        "title": "Program Standards",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "h2_color": "#002974",
+        "icon_color": "#002974",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "featured_product_CyYtxP": {
+      "type": "featured-product",
+      "blocks": {
+        "price_F4PJUk": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator_rLfVML": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker_PrNA9C": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons_YEHrUd": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description_4gaXDD": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "price_F4PJUk",
+        "separator_rLfVML",
+        "variant_picker_PrNA9C",
+        "buy_buttons_YEHrUd",
+        "description_4gaXDD"
+      ],
+      "custom_css": [
+        "{color: #005799; background-color: white;}"
+      ],
+      "settings": {
+        "featured_product": "skilcraft-toilet-tissue-2-ply-white-550-sheets-roll-40-rolls-box",
+        "divider": false,
+        "sku_enable": true,
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_arrows": false,
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "af_featured_category_ADVbRe": {
+      "type": "af-featured-category",
+      "custom_css": [],
+      "settings": {
+        "title": "Medical Grade Gloves",
+        "subtitle": "",
+        "background-color": "#cd1c1c",
+        "text-color": "#ffffff",
+        "home_featured_products": "ink-toners",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "af_vintage_military_X6nPTr",
+    "af_featured_category_mE6Phb",
+    "partner_text_rUXN8d",
+    "af_featured_category_HpAaBm",
+    "partner_text_with_icons_7dEt3L",
+    "featured_product_CyYtxP",
+    "af_featured_category_ADVbRe"
+  ]
+}

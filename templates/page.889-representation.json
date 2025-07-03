@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_LhnFYx": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DWWfmw": {
+          "type": "image",
+          "settings": {
+            "title": "889 Representation",
+            "title_size": 60,
+            "subheading": "",
+            "link": "https://cdn.shopify.com/s/files/1/0268/0986/0273/files/889_GCPC_Telecoms_Form_-_Arocep_Federal.pdf",
+            "link_text": "Download Now",
+            "target": "_blank",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/bg-889-3.jpg",
+            "image_mobile": "shopify://shop_images/sab1_hero_889.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_DWWfmw"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "background_image_text_xAX7fH": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "Definition",
+        "title": "What is 889 Representation?",
+        "text": "<p>Section 889 representation is a requirement for federal contractors to provide a statement about their use of covered telecommunications equipment or services.This requirement is part of Section 889 of the John S. McCain National Defense Authorization Act (NDAA) of 2019.</p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify://shop_images/bg17-ab1.jpg",
+        "focal_point": "center center",
+        "layout": "left",
+        "height": 550,
+        "parallax": true,
+        "stripe": false,
+        "parallax_direction": "top",
+        "lazyload_images": true
+      }
+    },
+    "af_text_and_image_rvrsbl_KkLfag": {
+      "type": "af-text-and-image-rvrsbl",
+      "disabled": true,
+      "settings": {
+        "bg-color": "#000000",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/gsa-logo.14ab1278.svg",
+        "subtitle": "",
+        "title": "What is 889 Representation?",
+        "text": "<p>Section 889 representation is a requirement for federal  contractors to provide a statement about their use of covered telecommunications equipment or services.This requirement is part of Section 889 of the John S. McCain National Defense Authorization Act (NDAA) of 2019.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "33",
+        "layout": "right",
+        "stripe": true,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_fcbRVb": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Shop AbilityOne Products",
+        "home_featured_products": "abilityone-catalog",
+        "per_row": 5,
+        "rows": 1,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "main-page-full-width",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow_LhnFYx",
+    "background_image_text_xAX7fH",
+    "af_text_and_image_rvrsbl_KkLfag",
+    "featured_collection_fcbRVb",
+    "main"
+  ]
+}

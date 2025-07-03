@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_EhHxYm": {
+      "type": "slideshow",
+      "blocks": {
+        "image_LPcXGL": {
+          "type": "image",
+          "settings": {
+            "title": "Bold Headlines",
+            "title_size": 60,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/AdobeStock_225122865.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_LPcXGL"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "vintage_military_6m3YqL": {
+      "type": "vintage-military",
+      "disabled": true,
+      "settings": {
+        "background": "#111111",
+        "fontcolor": "#ffffff",
+        "kicker": "Our Mission",
+        "headline": "Empowering Federal Excellence",
+        "subheadline": "Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.",
+        "text_align": "vertical-bottom horizontal-center",
+        "image": "shopify://shop_images/AdobeStock_359492610_2_757b6176-a689-4058-9a26-6c3be16c73b1.png",
+        "height": 97,
+        "link": "",
+        "link_text": "",
+        "vintage_military_overlay": "#e2dfd1"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_EhHxYm",
+    "vintage_military_6m3YqL"
+  ]
+}

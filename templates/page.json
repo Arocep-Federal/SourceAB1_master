@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "af_vintage_military_DNPeCA": {
+      "type": "af-vintage-military",
+      "custom_css": [],
+      "settings": {
+        "kicker": "",
+        "headline": "Driving Purpose Through Every Procurement",
+        "subheadline": "As a brand of Arocep Federal, LLC, a GSA-certified federal contractor, we deliver more than products—we deliver impact.",
+        "text_align": "vertical-bottom horizontal-center",
+        "image": "shopify://shop_images/feature_sourceabilityone7.jpg",
+        "link": "",
+        "link_text": "",
+        "vintage_military_overlay": "none"
+      }
+    },
+    "vintage_military_6m3YqL": {
+      "type": "vintage-military",
+      "disabled": true,
+      "settings": {
+        "background": "#111111",
+        "fontcolor": "#ffffff",
+        "kicker": "Our Mission",
+        "headline": "Empowering Federal Excellence",
+        "subheadline": "Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.",
+        "text_align": "vertical-bottom horizontal-center",
+        "image": "shopify://shop_images/AdobeStock_359492610_2_757b6176-a689-4058-9a26-6c3be16c73b1.png",
+        "height": 97,
+        "link": "",
+        "link_text": "",
+        "vintage_military_overlay": "#e2dfd1"
+      }
+    },
+    "text_columns_Xgn7cY": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_GxR4AJ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/icon_0001_teamwork.png",
+            "image_mask": "square",
+            "image_width": 250,
+            "title": "Partnership",
+            "text": "<p>We work in lockstep with AbilityOne® nonprofits</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_fGyd9k": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/icon_0002_excellence.png",
+            "image_mask": "square",
+            "image_width": 250,
+            "title": "Performance",
+            "text": "<p>Backed by over 20 years of federal contracting success.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_UhaLAf": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/icon_0001_purpose.png",
+            "image_mask": "square",
+            "image_width": 250,
+            "title": "Purpose",
+            "text": "<p>Every order supports the AbilityOne® workforce</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_GxR4AJ",
+        "text_block_fGyd9k",
+        "text_block_UhaLAf"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Our Values",
+        "fontcolor": "#ffffff",
+        "align_text": "center",
+        "bgimage": "shopify://shop_images/bg25-ab1.jpg"
+      }
+    },
+    "af_text_and_image_rvrsbl_CY3FVd": {
+      "type": "af-text-and-image-rvrsbl",
+      "custom_css": [],
+      "settings": {
+        "bg-color": "#ffffff",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/abt_mission2.jpg",
+        "subtitle": "",
+        "title": "Mission-Aligned Fulfillment",
+        "text": "<p>As a division of Arocep Federal, Source AbilityOne combines mission-driven procurement with the operational strength of a proven federal supplier. We leverage Arocep’s advanced logistics, federal fulfillment expertise, and real-time inventory systems to deliver compliant AbilityOne® orders accurately and on time. Every shipment supports both agency mission-readiness and the AbilityOne® workforce.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "af_text_and_image_rvrsbl_RRk8B6": {
+      "type": "af-text-and-image-rvrsbl",
+      "custom_css": [],
+      "settings": {
+        "bg-color": "#dfdfdf",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/abt_compliance2.jpg",
+        "subtitle": "",
+        "title": "Compliance-Driven Procurement",
+        "text": "<p>Backed by Arocep Federal’s 20+ years of contracting experience, our team ensures full compliance with FAR 8.7, TAA, and AbilityOne® mandates. We generate contract-ready quotes, manage mandatory sourcing requirements, and integrate seamlessly with GSA Advantage, FedMall, ECAT, and agency-specific platforms. Compliance isn’t an afterthought—it’s built into every transaction.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "right",
+        "image_width": "66",
+        "layout": "left",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "af_text_and_image_rvrsbl_hGCtLt": {
+      "type": "af-text-and-image-rvrsbl",
+      "custom_css": [],
+      "settings": {
+        "bg-color": "#ffffff",
+        "color": "#ffffff",
+        "image": "shopify://shop_images/abt_accnt2.jpg",
+        "subtitle": "",
+        "title": "Agency-Focused Account Management",
+        "text": "<p>Our account management model reflects Arocep Federal’s deep understanding of agency procurement cycles, contract vehicles, and audit requirements. Dedicated managers support every order with proactive tracking, documentation, and spend reporting to simplify agency oversight. We operate as a direct extension of your federal procurement team.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "right",
+        "stripe": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "af_hero_KmjyiN": {
+      "type": "af-hero",
+      "custom_css": [],
+      "settings": {
+        "fontcolor": "#ffffff",
+        "kicker": "Proud to Be",
+        "headline": "Woman Owned",
+        "subheadline": "Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.",
+        "button_label": "",
+        "button_link": "",
+        "text_align": "vertical-bottom horizontal-right",
+        "image": "shopify://shop_images/bg-woman-owned.png",
+        "focal_point": "20% 50%",
+        "color_border": "#f4f4f4",
+        "height": 450,
+        "parallax": true,
+        "vintage_military_overlay": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "af_vintage_military_DNPeCA",
+    "vintage_military_6m3YqL",
+    "text_columns_Xgn7cY",
+    "af_text_and_image_rvrsbl_CY3FVd",
+    "af_text_and_image_rvrsbl_RRk8B6",
+    "af_text_and_image_rvrsbl_hGCtLt",
+    "af_hero_KmjyiN"
+  ]
+}

@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_pq4hta": {
+      "type": "slideshow",
+      "blocks": {
+        "image_89KRhX": {
+          "type": "image",
+          "settings": {
+            "title": "Request A Formal Proposal",
+            "title_size": 60,
+            "subheading": "Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.",
+            "link": "",
+            "link_text": "",
+            "target": "",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/feature_sourceabilityone8.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_89KRhX"
+      ],
+      "custom_css": [],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Request A Formal Proposal"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fill out the form below and attach any supporting documents. Our team will have an official quote sent over within 24 hours.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "font_size": 20,
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff",
+        "narrow_column": true
+      }
+    },
+    "contact_quote_qry8bN": {
+      "type": "contact-quote",
+      "custom_css": [],
+      "settings": {
+        "bgimage": "shopify://shop_images/bg17-ab1.jpg",
+        "title": "Request for Quote",
+        "text": "",
+        "narrow_column": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_pq4hta",
+    "rich-text",
+    "contact_quote_qry8bN"
+  ]
+}

@@ -1,0 +1,123 @@
+
+
+
+
+<div class="page-width page-content collections-list collections-list--{{ section.id }}">
+    <div class="grid grid--uniform skrim-grid">
+    
+            {%- render 'collection-grid-item-text',
+              collection: collection,
+              gridView: grid_item_width,
+              sizeVariable: gridView,
+              fallback: 'variable'
+            -%} 
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.list-collections-template.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "title_enable",
+      "label": "t:sections.list-collections-template.settings.title_enable.label",
+      "default": true
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.list-collections-template.settings.content"
+    },
+    {
+      "type": "radio",
+      "id": "display_type",
+      "label": "t:sections.list-collections-template.settings.display_type.label",
+      "default": "all",
+      "options": [
+        {
+          "value": "all",
+          "label": "t:sections.list-collections-template.settings.display_type.options.all.label"
+        },
+        {
+          "value": "selected",
+          "label": "t:sections.list-collections-template.settings.display_type.options.selected.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "sort",
+      "label": "t:sections.list-collections-template.settings.sort.label",
+      "info": "t:sections.list-collections-template.settings.sort.info",
+      "default": "alphabetical",
+      "options": [
+        {
+          "value": "products_high",
+          "label": "t:sections.list-collections-template.settings.sort.options.products_high.label"
+        },
+        {
+          "value": "products_low",
+          "label": "t:sections.list-collections-template.settings.sort.options.products_low.label"
+        },
+        {
+          "value": "alphabetical",
+          "label": "t:sections.list-collections-template.settings.sort.options.alphabetical.label"
+        },
+        {
+          "value": "alphabetical_reversed",
+          "label": "t:sections.list-collections-template.settings.sort.options.alphabetical_reversed.label"
+        },
+        {
+          "value": "date",
+          "label": "t:sections.list-collections-template.settings.sort.options.date.label"
+        },
+        {
+          "value": "date_reversed",
+          "label": "t:sections.list-collections-template.settings.sort.options.date_reversed.label"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "grid",
+      "label": "t:sections.list-collections-template.settings.grid.label",
+      "default": "3",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "t:sections.list-collections-template.blocks.collection.name",
+      "settings": [
+        {
+          "label": "t:sections.list-collections-template.blocks.collection.settings.collection.label",
+          "id": "collection",
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

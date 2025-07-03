@@ -1,0 +1,303 @@
+{%- style -%}
+    .partners-{{ section.id }} {
+      background-color: {{ section.settings.color_background }};
+      color: {{ section.settings.color_text }};
+      /* height:200px; */
+      overflow:visible;
+    }
+
+
+    .partners-{{ section.id }} + div {
+      padding-bottom:200px;
+  }
+
+    .partner-text {
+      margin: 0 10%;
+    }
+
+    .partner-image {
+      width:300px;
+      padding:20px;
+      background-color:white;
+      border-radius: 10px;
+      margin-right:6px;
+    }
+
+    .partners-wrapper {
+      position:relative;
+      top:-200px;
+      z-index:10;
+    }
+
+    .partners-{{ section.id }} .flickity-prev-next-button  {
+      position:absolute;
+      top:-80px;
+  }
+  .partners-{{ section.id }} .flickity-previous  {
+        right:90px;
+        left:auto;
+      }
+      .partners-{{ section.id }} .flickity-next  {
+         right:40px;
+    }
+
+
+
+    @media only screen and (max-width:970px){
+    .partners-wrapper {
+      position:relative;
+      top:-100px;
+    }
+    .partners-{{ section.id }} .flickity-previous,
+    .partners-{{ section.id }} .flickity-next  {
+      display:none
+    }
+
+    }
+
+    @media only screen and (max-width:590px){
+      .partners-wrapper {
+        top:0px;
+      }
+    }
+
+{%- endstyle -%}
+
+<script>
+      document.addEventListener('page:loaded', function() {
+          // Page has loaded and theme assets are ready
+          {% comment %} console.log("init partners"); {% endcomment %}
+
+          theme.Partners = (function() {
+              var defaults = {
+                  adaptiveHeight: false,
+                  freeScroll: true,
+                  avoidReflow: true,
+                  pageDots: false,
+                  prevNextButtons: true,
+                  wrapAround: false
+              };
+
+              {% comment %} console.log("defaults: ", defaults); {% endcomment %}
+
+              function Partners(container) {
+
+                  {% comment %} console.log("init Partners function"); {% endcomment %}
+                this.container = container;
+                var sectionId = container.getAttribute('data-section-id');
+                this.slideshow = container.querySelector('#partners-' + sectionId);
+                this.namespace = '.partner-' + sectionId;
+
+              {% comment %} console.log("Namespace: ", this.namespace) {% endcomment %}
+
+                if (!this.slideshow) {
+                  {% comment %} console.log("no slideshow"); {% endcomment %}
+                  return;
+              }
+
+                theme.initWhenVisible({
+                  element: this.container,
+                  callback: this.init.bind(this),
+                  threshold: 600
+                });
+              }
+
+              Partners.prototype = Object.assign({}, Partners.prototype, {
+                init: function() {
+                  // Do not wrap when only a few blocks
+                  if (this.slideshow.dataset.count <= 3) {
+                    defaults.wrapAround = false;
+                  }
+
+                  this.flickity = new theme.Slideshow(this.slideshow, defaults);
+
+                  // Autoscroll to next slide on load to indicate more blocks
+                  if (this.slideshow.dataset.count > 3) {
+                    setTimeout(function() {
+                      this.flickity.goToSlide(1);
+                    }.bind(this), 1000);
+                  }
+                },
+
+                onUnload: function() {
+                  if (this.flickity && typeof this.flickity.destroy === 'function') {
+                    this.flickity.destroy();
+                  }
+                },
+
+                onDeselect: function() {
+                  if (this.flickity && typeof this.flickity.play === 'function') {
+                    this.flickity.play();
+                  }
+                },
+
+                onBlockSelect: function(evt) {
+                  var slide = this.slideshow.querySelector('.partners-slide--' + evt.detail.blockId)
+                  var index = parseInt(slide.dataset.index);
+
+                  if (this.flickity && typeof this.flickity.pause === 'function') {
+                    this.flickity.goToSlide(index);
+                    this.flickity.pause();
+                  }
+                },
+
+                onBlockDeselect: function() {
+                  if (this.flickity && typeof this.flickity.play === 'function') {
+                    this.flickity.play();
+                  }
+                }
+              });
+
+              return Partners;
+            })();
+
+
+            theme.sections.register('partners', theme.Partners);
+  });
+</script>
+
+<div
+  class="text-center partners-section partners-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="partners"
+  data-aos
+>
+  <div class="partners-wrapper">
+    {%- if section.settings.title != blank -%}
+      <div class="page-width">
+        <div class="section-header">
+          <h2>{{ section.settings.title | escape }}</h2>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="slideshow-wrapper">
+        <div class="partners-slider" id="partners-{{ section.id }}" data-count="{{ section.blocks.size }}">
+          {%- for block in section.blocks -%}
+            <div
+              class="partners-slide partners-slide--{{ block.id }}"
+              data-index="{{ forloop.index0 }}"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.image != blank -%}
+                <div class="partner-image">
+
+                  <div
+                    class="image-wrap"
+                    style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+                  >
+                    {%- liquid
+                      assign size_variable = '142px'
+                      assign fallback = size_variable
+                      -%}
+                      {% if block.settings.link != blank %}
+                        <a href="{{ block.settings.link }}" target="{{ block.settings.target }}">
+                      {% endif %}
+                      {%- render 'image-element',
+                      img: block.settings.image,
+                      size_variable: size_variable,
+                      fallback: fallback,
+                      widths: '180, 360, 540, 720'
+                    -%}
+
+                    {% if block.settings.link != blank %}
+                      </a>
+                    {% endif %}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Partners",
+  "max_blocks": 20,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Proudly Partnered With"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Background-color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text Color",
+      "default": "#fff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "partner",
+      "name": "Partner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Partner Logo"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.logo-list.blocks.logo.settings.link.label",
+          "info": "t:sections.logo-list.blocks.logo.settings.link.info"
+        },
+        {
+          "type": "select",
+          "id": "target",
+          "label": "Open in...",
+          "default": "_self",
+          "options": [
+            {
+              "value": "_blank",
+              "label": "New Window"
+            },
+            {
+              "value": "_self",
+              "label": "Same Window"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Partners",
+      "blocks": [
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        },
+        {
+          "type": "partner"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

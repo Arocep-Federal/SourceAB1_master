@@ -1,0 +1,193 @@
+<style>
+  .shopify-section:has(.vintage-military-{{ section.id }}) {
+        background-color: {{section.settings.background}};
+        color: {{section.settings.fontcolor}};
+    }
+    .vintage-military-{{ section.id }} h3 {
+    margin: 0 0 10px;
+    font-size:40px;
+  }
+  .vintage-military-{{ section.id }} .section-header {
+    margin-bottom: 30px;
+  }
+  .vintage-military-{{ section.id }} .section-header h2 {
+    margin:0;
+  }
+  .vintage-military-{{ section.id }} .partners-wrapper {
+    margin:0 0 45px 15%;
+  }
+ 
+
+  @media only screen and (min-width: 590px){
+    .image-wrap.text-spacing {
+      border-radius:10px
+    }
+    .vintage-military-{{ section.id }} {
+      position:relative; top:-180px;
+    }
+   }
+</style>
+
+
+<div class="vintage-military-{{ section.id }}">
+
+  <div class="partners-wrapper">
+
+  {%- if section.settings.title != blank -%}
+    <div class="section-header text-{{ section.settings.align_text }}">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+  {% endif %}
+
+
+  <div class="grid grid--flush-bottom" style="overflow:hidden">
+  {% comment %} <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom"> {% endcomment %}
+    {% comment %} {%- liquid
+      assign grid_item_width = 'medium-up--one-third'
+      case section.blocks.size
+        when 1
+          assign grid_item_width = 'medium-up--one-half'
+        when 2
+          assign grid_item_width = 'medium-up--one-half'
+        when 4
+          assign grid_item_width = 'medium-up--one-half'
+      endcase
+    -%} {% endcomment %}
+    {%- for block in section.blocks -%}
+      {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+        {%- assign column_width = 'medium-up--one-half' -%}
+      {%- else -%}
+        {%- assign column_width = grid_item_width -%}
+      {%- endif -%}
+      <div style="width:10000px;">
+      {% comment %} <div
+        class="grid__item {{ column_width }} text-{{ section.settings.align_text }}"
+        {{ block.shopify_attributes }}
+        data-aos="row-of-5"
+      > {% endcomment %}
+        {% comment %} {%- if block.settings.enable_image -%} {% endcomment %}
+
+{% comment %} 
+          {% if block.settings.button_link != blank %}
+            <a href="{{ block.settings.button_link }}">
+          {% endif %}
+          {% endcomment %}
+         
+          {% if block.settings.image != blank %}
+            {% comment %} <div
+              class="image-wrap text-spacing"
+              style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+            > {% endcomment %}
+            <div style="width:325px; height:200px; overflow:hidden; float:left">
+              {%- assign img_url = block.settings.image | img_url: '1x1' -%}
+              <img
+                class="lazyload"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080]"
+                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ block.settings.image.alt }}"
+              >
+            </div>
+          {% else %}
+            <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+          {% endif %}
+       
+       
+          {% if block.settings.button_link != blank %}
+            </a>
+          {% endif %}
+
+
+
+        {% comment %} {% endif %} {% endcomment %}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+</div>
+
+  
+  {% schema %}
+  {
+    "name": "Floating Image Carousel",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "background",
+        "label": "Background",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "fontcolor",
+        "label": "Font Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_block",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "enable_image",
+            "label": "Show image",
+            "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Floating Image Carousel",
+        "category": "Text",
+        "blocks": [
+          {
+            "type": "image_block"
+          },
+          {
+            "type": "image_block"
+          },
+          {
+            "type": "image_block"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  

@@ -1,0 +1,171 @@
+{% style %}
+  .all-categories .top-category {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #777; 
+    border-bottom: 1px solid #999; 
+    font-size: 20px;
+    background-color: #000; 
+  }
+
+  ul.categories {
+    padding: 0;
+    margin: 0;
+  }
+
+  .all-categories ul.child-categories {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+
+    font-size: 14px;
+    list-style: none;
+
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .all-categories ul.child-categories {
+      -moz-column-count: 2;
+      -moz-column-gap: 20px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 20px;
+      column-count: 2;
+      column-gap: 20px;
+    }
+
+    @media only screen and (max-width: 589px) {
+      .all-categories ul.child-categories {
+        -moz-column-count: 1;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0px;
+        column-count: 1;
+        column-gap: 0px;
+      }
+    }
+  }
+
+  .all-categories li {
+    cursor: pointer;
+  }
+
+  .all-categories .child-categories > li {
+    cursor: pointer;
+    margin: 0;
+    border: none;
+  }
+
+  .trigger-wrapper {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .trigger-wrapper span {
+    float: left;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .trigger {
+    width: 90%;
+  }
+  .trigger-icon {
+    width: 10%;
+    text-align: right;
+  }
+{% endstyle %}
+
+<script>
+  $(document).ready(function () {
+    console.log('ready');
+    $('.trigger-wrapper').on('click', function (e) {
+      e.preventDefault();
+      $(this)
+        .next('.child-categories')
+        .slideToggle(function () {
+          if ($(this).is(':visible')) {
+            $(this).parent().find('.trigger-icon').html('&ndash;');
+          } else {
+            $(this).parent().find('.trigger-icon').html('+');
+          }
+          
+        });
+    });
+  });
+</script>
+
+<div class="all-categories">
+  <h2>Browse by Category</h2>
+  <nav role="navigation">
+    {%- for link in linklists['vintage-military-theme'].links -%}
+      {% comment %} <li> {% endcomment %}
+      {% comment %}
+        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+          {{ link.title }}
+        </a>
+      {% endcomment %}
+
+      {%- if link.links != blank -%}
+        <ul class="categories">
+          {%- for child_link in link.links -%}
+            <li class="top-category">
+              <span class="trigger-wrapper">
+                {%- if child_link.links != blank -%}
+                  <span class="trigger">{{ child_link.title }}</span>
+                  <span class="trigger-icon">&ndash;</span>
+                {% endif %}
+                {%- if child_link.links == blank -%}
+                  <a
+                    href="{{ child_link.url }}"
+                    {% if child_link.active %}
+                      aria-current="page"
+                    {% endif %}
+                  >
+                    <span class="trigger">{{ child_link.title }}</span>
+                    <span class="trigger-icon">&gt;</span>
+                  </a>
+                {% endif %}
+              </span>
+              {%- if child_link.links != blank -%}
+                <ul class="child-categories">
+                  <li>
+                    <a
+                      href="{{ child_link.url }}"
+                      {% if child_link.active %}
+                        aria-current="page"
+                      {% endif %}
+                    >
+                      Shop All {{ child_link.title }}
+                    </a>
+                  </li>
+                  {%- for grandchild_link in child_link.links -%}
+                    <li>
+                      <a
+                        href="{{ grandchild_link.url }}"
+                        {% if grandchild_link.active %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ grandchild_link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {% comment %} </li> {% endcomment %}
+    {%- endfor -%}
+  </nav>
+</div>

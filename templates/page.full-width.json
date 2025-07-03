@@ -1,0 +1,90 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_HDn9Gz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PrkRGQ": {
+          "type": "image",
+          "settings": {
+            "title": "Sales Tax & Exemptions",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "target": "",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/sab1_hero10.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_PrkRGQ"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "text_MXKrgH": {
+      "type": "text",
+      "blocks": {
+        "text_block_6XEA9y": {
+          "type": "text_block",
+          "settings": {
+            "title": "Sales Tax",
+            "text": "<p>Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
+            "button_label": "",
+            "button_link": "",
+            "layout": "center"
+          }
+        },
+        "text_block_dqKakK": {
+          "type": "text_block",
+          "settings": {
+            "title": "Tax Exempt Businesses",
+            "text": "<p>Please email accounting@arocep.com with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
+            "button_label": "Email Us",
+            "button_link": "mailto:accounting@arocep.com",
+            "layout": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_6XEA9y",
+        "text_block_dqKakK"
+      ],
+      "settings": {
+        "top_padding": true,
+        "bottom_padding": true,
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page-full-width",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow_HDn9Gz",
+    "text_MXKrgH",
+    "main"
+  ]
+}

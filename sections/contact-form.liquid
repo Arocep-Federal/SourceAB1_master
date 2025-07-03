@@ -1,0 +1,224 @@
+{% style %}
+    .index-section--{{ section.id }} .with-margin {
+        width:48%;
+        margin-right:2%
+    }
+    @media only screen and (max-width:589px){
+      .index-section--{{ section.id }} .with-margin {
+        width:100%;
+        margin-right:0
+      }
+    }
+
+
+
+  @media only screen and (min-width: 590px) {
+    .index-section:has(.index-section--{{ section.id }}) {
+      padding:0;
+    }
+
+   }
+
+   .index-section--{{ section.id }} .page-width {
+    padding:100px 0;
+   }
+
+    .index-section--{{ section.id }} {
+      background:url({{ section.settings.bgimage | image_url:width:auto }});
+      background-size:cover;
+      background-position:bottom;
+      width:100%;
+      position:relative;
+      padding:0;
+    }
+    /* .index-section--{{ section.id }} .section-header { margin-top:100px;} */
+    .index-section--{{ section.id }} label { display:none }
+    .index-section--{{ section.id }} input,
+    .index-section--{{ section.id }} textarea,
+    .index-section--{{ section.id }} select
+    {
+      border-radius:5px;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+    .index-section--{{ section.id }} .btn--full {
+      border-radius:5px;
+    }
+    .index-section--{{ section.id }} .form-vertical input,
+    .index-section--{{ section.id }} .form-vertical select,
+    .index-section--{{ section.id }} .form-vertical textarea {
+      margin-bottom: 10px;
+    }
+{% endstyle %}
+
+<div class="index-section--{{ section.id }}">
+  <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h2 class="section-header__title">
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {% endif %}
+    {%- if section.settings.text != blank -%}
+      <p>{{ section.settings.text }}</p>
+    {%- endif -%}
+
+    <div class="form-vertical">
+      {%- assign form_id = 'contact-' | append: section.id -%}
+      {%- form 'contact', id: form_id -%}
+        {%- if form.posted_successfully? -%}
+          <p class="note note--success">
+            {{ 'contact.form.post_success' | t }}
+          </p>
+        {%- endif -%}
+
+        {{ form.errors | default_errors }}
+
+        <div class="grid grid--small">
+          <div class="grid__item medium-up--one-half with-margin">
+            <label aria- for="ContactFormFirstName-{{ section.id }}">First Name</label>
+            <input
+              type="text"
+              required="required"
+              placeholder="First Name"
+              id="ContactFormFirstName-{{ section.id }}"
+              class="input-full"
+              name="contact[firstname]"
+              autocapitalize="words"
+              value="{% if form.firstname %}{{ form.firstname }}{% elsif customer %}{{ customer.firstname }}{% endif %}"
+            >
+          </div>
+          <div class="grid__item medium-up--one-half">
+            <label for="ContactFormLastName-{{ section.id }}">Last Name</label>
+            <input
+              type="text"
+              required="required"
+              placeholder="Last Name"
+              id="ContactFormLastName-{{ section.id }}"
+              class="input-full"
+              name="contact[lastname]"
+              autocapitalize="words"
+              value="{% if form.lastname %}{{ form.lastname }}{% elsif customer %}{{ customer.lastname }}{% endif %}"
+            >
+          </div>
+
+          <div class="grid__item medium-up--one-whole">
+            <label for="ContactFormAgency-{{ section.id }}">Department/Agency</label>
+            <input
+              type="text"
+              required="required"
+              placeholder="Department/Agency"
+              id="ContactFormAgency-{{ section.id }}"
+              class="input-full"
+              name="contact[agency]"
+              autocapitalize="words"
+              value="{% if form.agency %}{{ form.agency }}{% elsif customer %}{{ customer.agency }}{% endif %}"
+            >
+          </div>
+
+          <div class="grid__item medium-up--one-half with-margin">
+            <label for="ContactFormEmail-{{ section.id }}">Email Address</label>
+            <input
+              type="email"
+              required="required"
+              placeholder="Email Address"
+              id="ContactFormEmail-{{ section.id }}"
+              class="input-full"
+              name="contact[email]"
+              autocorrect="off"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            >
+          </div>
+
+          <div class="grid__item medium-up--one-half">
+            <label for="ContactFormPhone-{{ section.id }}">Phone Number</label>
+            <input
+              type="tel"
+              required="required"
+              placeholder="Phone Number"
+              id="ContactFormPhone-{{ section.id }}"
+              class="input-full"
+              name="contact[phone]"
+              pattern="[0-9\-]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+            >
+          </div>
+
+          <div class="grid__item medium-up--one-whole">
+            <label for="ContactFormMessage-{{ section.id }}">{{ 'contact.form.message' | t }}</label>
+            <textarea
+              rows="5"
+              placeholder="Note"
+              id="ContactFormMessage-{{ section.id }}"
+              class="input-full"
+              name="contact[body]"
+            >{% if form.body %}{{ form.body }}{% endif %}</textarea>
+          </div>
+
+          <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+          <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn btn--full">
+            {{ 'contact.form.send' | t }}
+          </button>
+        </div>
+
+        {% comment %}
+          Remove the following three lines of code to remove the note
+          about being protected by Google's reCAPTCHA service.
+          By removing it, the small reCAPTCHA widget will appear in the
+          bottom right corner of the page.
+        {% endcomment %}
+        {{ 'shopify.online_store.spam_detection.disclaimer_html' | t }}
+      {%- endform -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bgimage",
+      "label": "Bakground Image"
+    },
+    {
+      "type": "paragraph",
+      "content": "Text here..."
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.contact-form.settings.title.label",
+      "default": "Contact us"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.contact-form.settings.text.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_phone",
+      "label": "t:sections.contact-form.settings.show_phone.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow_column",
+      "label": "t:sections.contact-form.settings.narrow_column.label",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.contact_form.name"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}
