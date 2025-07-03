@@ -128,10 +128,11 @@ background-color: white;
 
                     </div>
 
-                      <button href="{{ product.url | within: collection }}" class="grid-product__link">View this item</button> 
                   </div>
                 {%- endfor -%}
               </div>
+
+                      <button href="{{ product.url | within: collection }}" class="grid-product__link">View this item</button> 
             </div>
 
           {% else %}
