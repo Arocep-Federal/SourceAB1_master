@@ -34,7 +34,7 @@
         "background-color": "#ffffff",
         "text-color": "#ffffff",
         "frame-color": "#0a406c",
-        "button-color": "",
+        "button-color": "#01589f",
         "home_featured_products": "abilityone-catalog",
         "per_row": 4,
         "rows": 2
@@ -80,8 +80,8 @@
         "subtitle": "",
         "background-color": "#ffffff",
         "text-color": "#ffffff",
-        "frame-color": "#002243",
-        "button-color": "",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
         "home_featured_products": "file-folders-portable-storage-box-files",
         "per_row": 4,
         "rows": 1
@@ -203,7 +203,7 @@
         "background-color": "#ffffff",
         "text-color": "#ffffff",
         "frame-color": "#91002b",
-        "button-color": "",
+        "button-color": "#ce013c",
         "home_featured_products": "ink-toners",
         "per_row": 4,
         "rows": 1
