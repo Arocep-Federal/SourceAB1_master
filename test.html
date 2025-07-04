@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container { 
+            display: flex;
+            flex-direction: column;
+            height: 1000px; 
+            width:400px; 
+            border: 1px solid red;
+        }
+        .child { 
+            height:100px; 
+            width:100%; 
+            color: green;
+            border: 1px solid red;
+        }
+        .nextlast {
+            flex-grow:1;
+        }
+        .last {
+
+        }
+    </style>
+    <div class="container">
+        <div class="child">Child</div>
+        <div class="child">Child</div>
+        <div class="child nextlast">Child</div>
+        <div class="child last">Child</div>
+    </div>
+</body>
+</html>
