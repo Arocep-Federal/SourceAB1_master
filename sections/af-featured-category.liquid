@@ -46,7 +46,11 @@
       display:flex;
       flex-direction:column;
     }
-    .vintage-military-{{ section.id }} .grid__item .view-btn  {
+    .vintage-military-{{ section.id }} .grid__item .grid-product__link  {
+    flex-grow:1;
+    }
+    
+      .vintage-military-{{ section.id }} .grid__item .view-btn  {
   border-radius: 5px;
   background-color: {{ section.settings.button-color }};
   display:block;
