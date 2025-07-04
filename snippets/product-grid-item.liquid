@@ -80,7 +80,7 @@
     -%}
 
     {%- assign preview_image = product.featured_media.preview_image -%}
-
+<div class="link-container">
     <a href="{{ product.url | within: collection }}" class="grid-product__link">
       <div class="grid-product__image-mask">
         {%- if fixed_aspect_ratio -%}
@@ -234,8 +234,9 @@
         {%- endif -%}
       </div>
     </a>
-  <a href="{{ product.url | within: collection }}" class="view-btn">View this item</a>
 
+  <a href="{{ product.url | within: collection }}" class="view-btn">View this item</a>
+</div>
     {% unless type == 'horizontal' %}
       {%- if settings.enable_swatches -%}
         {%- assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase -%}
