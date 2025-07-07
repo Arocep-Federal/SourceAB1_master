@@ -107,6 +107,12 @@
         top:10px;
       }
 
+      .section-header h2 span {
+        background-color: #004a84;
+        position:relative;
+        z-index:3;
+      }
+
 
       .section-header .hdr-wrap:after {
         right:0;
@@ -199,7 +205,7 @@
           <div class="header-stripes">
             <div class="section-header__title">
               <div class="hdr-wrap">
-                <h2>{{ section.settings.title }}</h2>
+                <h2><span>{{ section.settings.title }}</span></h2>
               </div>
             </div>
           </div>
