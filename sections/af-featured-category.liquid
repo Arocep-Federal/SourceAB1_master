@@ -111,8 +111,6 @@
   >
     {%- style -%}
     .section-header {
-      background-color: #91002b;
-      border-bottom: 17px solid #00579c;
       display:flex;
     }
 
@@ -127,15 +125,22 @@
       text-align:center;
       color:white;
     }
+
+    .header-stripes {
+      background-color: #91002b;
+      border-bottom: 17px solid #00579c;
+    }
     {%- endstyle -%}
     
     {%- if section.settings.title != blank -%}
       <div class="page-width-full">
 
         <div class="section-header">
+
+          <div class="header-stripes">
           <div class="section-header__title">
             <h2>{{ section.settings.title }}</h2>
-          </div>
+          </div></div>
         </div>
 
       </div>
