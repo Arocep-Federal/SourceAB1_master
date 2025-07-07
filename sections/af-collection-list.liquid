@@ -23,12 +23,20 @@
   
   <div class="index-collections-{{ section.id }}">
   
-    <div class="page-width">
-      {%- if section.settings.title != blank -%}
+    <div class="page-width-full">
+
+
+    {%- if section.settings.title != blank -%}
+      <div class="page-width-full">
         <div class="section-header">
-          <h2 class="section-header__title light-headline">{{ section.settings.title }}</h2>
+          <div class="header-stripes">
+            <div class="section-header__title">
+              <h2>{{ section.settings.title }}</h2>
+            </div>
+          </div>
         </div>
-      {% endif %}
+      </div>
+    {% endif %}
   
       <div class="grid{% if section.settings.enable_gutter %} grid--small-gutters{%else%} grid--no-gutters{% endif %}">
   
