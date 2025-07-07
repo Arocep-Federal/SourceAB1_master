@@ -70,9 +70,7 @@
     },
     "af_featured_category_HpAaBm": {
       "type": "af-featured-category",
-      "custom_css": [
-        "h2 {color: #002974;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Filing Solutions",
         "subtitle": "",
@@ -192,9 +190,7 @@
     },
     "af_featured_category_ADVbRe": {
       "type": "af-featured-category",
-      "custom_css": [
-        "h2 {color: blue;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Medical Grade Gloves",
         "subtitle": "",
