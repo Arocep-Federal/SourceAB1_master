@@ -136,11 +136,6 @@
               </a>
             {% endif %}
           </h2>
-          <h3 class="section-header__subtitle">
-            {% if section.settings.subtitle != blank %}
-              {{ section.settings.subtitle }}
-            {% endif %}
-          </h3>
         </div>
       </div>
     {% endif %}
@@ -204,6 +199,12 @@
         </div>
       </div>
     </div>
+
+          {% if section.settings.subtitle != blank %}
+            <h3 class="section-header__subtitle">
+                {{ section.settings.subtitle }}
+            </h3>
+          {% endif %}
   </div>
 </div>
 {% schema %}
