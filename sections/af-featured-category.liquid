@@ -107,15 +107,15 @@
       }
 
 
-      .section-header h2:after {
+      .section-header .hdr-wrap:after {
         right:0;
       }
-      .section-header h2:before {
+      .section-header .hdr-wrap:before {
         left:0;
       }
 
-      .section-header h2:after,
-      .section-header h2:before {
+      .section-header .hdr-wrap:after,
+      .section-header .hdr-wrap:before {
         content:"";
         background-color: #0a406c;
         height: 33px; 
@@ -197,7 +197,9 @@
         <div class="section-header">
           <div class="header-stripes">
             <div class="section-header__title">
-              <h2>{{ section.settings.title }}</h2>
+              <div class="hdr-wrap">
+                <h2>{{ section.settings.title }}</h2>
+              </div>
             </div>
           </div>
         </div>
