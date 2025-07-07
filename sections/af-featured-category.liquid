@@ -109,6 +109,23 @@
     data-section-id="{{ section.id }}"
     data-section-type="featured-collection"
   >
+    {%- style -%}
+    .section-header__title {
+      background-color: #91002b;
+      border-bottom: 17px solid #00579c;
+    }
+    .section-header__title {
+      background-color: #004a84;
+      color: white;
+    }
+    .section-header h2 {
+      width: auto;
+      max-width:70%;
+      margin: 10px auto;
+      text-align:center;
+      color:white;
+    }
+    {%- endstyle -%}
     
     {%- if section.settings.title != blank or section.settings.view_all -%}
       <div class="page-width-full">
@@ -127,19 +144,6 @@
       </div>
     {% endif %}
 
-    {%- style -%}
-    .section-header {
-      background-color: #004a84;
-      color: white;
-    }
-    .section-header h2 {
-      width: auto;
-      max-width:70%;
-      margin: 10px auto;
-      text-align:center;
-      color:white;
-    }
-    {%- endstyle -%}
     <div class="page-width page-width--flush-small">
       <div class="grid-overflow-wrapper">
         <div class="grid grid--uniform" data-aos="overflow__animation">
