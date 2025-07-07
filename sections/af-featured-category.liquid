@@ -44,15 +44,10 @@
         margin-bottom:6px;
       }
 
-
-      @media only screen and (min-width: 590px) {
-    .grid-product__content {
-      margin-bottom: 0px;    height: 100%;
-    }
-  }
       .vintage-military-{{ section.id }} .link-container  {
         display:flex;
-        flex-direction:column;    height: 100%;
+        flex-direction:column;    
+        height: 100%;
       }
       .vintage-military-{{ section.id }} .link-container .grid-product__link  {
         flex-grow:1;
@@ -86,6 +81,20 @@
       .vintage-military-{{ section.id }} .grid {
         margin:0;
       }
+
+
+      @media only screen and (min-width: 590px) {
+        .grid-product__content {
+          margin-bottom: 0px;    
+          height: 100%;
+        }
+
+        .vintage-military-{{ section.id }} .grid__item  {
+          flex:1 0 100%;
+        }
+
+  }
+
 {% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
