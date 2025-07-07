@@ -88,6 +88,33 @@
         }
       }
 
+      .section-header {
+        display: flex;
+      }
+
+      .section-header__title {
+      }
+
+      .section-header h2 {
+        background-color: #004a84;
+        box-shadow:0 0 10px black;
+        display:inline;
+        padding: 25px 190px;
+        text-align: center;
+        color: white;
+      }
+
+      .header-stripes {
+        background-color: #91002b;
+        border-bottom: 17px solid #00579c;
+        width: 100%;
+        height:80px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
       @media only screen and (max-width: 589px) {
         .vintage-military-{{ section.id }} .grid__item  {
           flex:1 0 80%;
@@ -95,9 +122,14 @@
         .grid-overflow-wrapper .grid__item:first-child {
           margin-left: 0px;
         }
-      }
 
-{% endstyle %}
+      .section-header h2 {
+        padding: 5px 0;
+      }
+      }
+      
+
+    {%- endstyle -%}
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
     assign per_row = section.settings.per_row
@@ -122,33 +154,6 @@
     data-section-id="{{ section.id }}"
     data-section-type="featured-collection"
   >
-    {%- style -%}
-      .section-header {
-        display: flex;
-      }
-
-      .section-header__title {
-      }
-
-      .section-header h2 {
-        background-color: #004a84;
-        box-shadow:0 0 10px black;
-        display:inline;
-        padding: 25px 190px;
-        text-align: center;
-        color: white;
-      }
-
-      .header-stripes {
-        background-color: #91002b;
-        border-bottom: 17px solid #00579c;
-        width: 100%;
-        height:80px;
-        display:flex;
-  align-items: center;
-  justify-content: center;
-      }
-    {%- endstyle -%}
 
     {%- if section.settings.title != blank -%}
       <div class="page-width-full">
