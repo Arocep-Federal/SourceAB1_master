@@ -69,8 +69,8 @@
       "settings": {
         "title": "Shop by Category",
         "enable_gutter": false,
-        "background-color": "#FFF",
-        "heading-color": "#000"
+        "background-color": "#ffffff",
+        "heading-color": "#000000"
       }
     },
     "af_featured_category_mE6Phb": {
@@ -113,7 +113,7 @@
         "align_text": "center",
         "font_size": 32,
         "backgroundcolor": "#006dc6",
-        "image": "shopify://shop_images/bg17-ab1.jpg",
+        "image": "shopify://shop_images/bg-ab1-program.jpg",
         "link": "",
         "fontcolor": "#ffffff"
       }
