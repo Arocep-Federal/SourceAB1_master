@@ -90,6 +90,7 @@
 
       .section-header {
         display: flex;
+        position:relative;
       }
 
       .section-header__title {
@@ -102,6 +103,18 @@
         padding: 25px 190px;
         text-align: center;
         color: white;
+      }
+
+
+      .section-header h2:before {
+        content:"";
+        background-color: #0a406c;
+        height: 33px; 
+        width:20%;
+        position:absolute;
+        left:0;
+        z-index:2;
+        bottom:17px;
       }
 
       .header-stripes {
