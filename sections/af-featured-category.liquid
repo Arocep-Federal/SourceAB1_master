@@ -109,6 +109,12 @@
     data-section-id="{{ section.id }}"
     data-section-type="featured-collection"
   >
+    
+    {%- style -%}
+    .section-header {
+      bacground-color: navy;
+    }
+    {%- endstyle -%}
     {%- if section.settings.title != blank or section.settings.view_all -%}
       <div class="page-width">
         <div class="section-header">
