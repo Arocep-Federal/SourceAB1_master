@@ -25,9 +25,7 @@
     },
     "af_featured_category_mE6Phb": {
       "type": "af-featured-category",
-      "custom_css": [
-        "h2 {color: #002974;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Shop Best Sellers",
         "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
