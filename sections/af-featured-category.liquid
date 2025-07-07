@@ -75,7 +75,7 @@
 
     .vintage-military-{{ section.id }} .grid__item .sale-price  {
         color: {{ section.settings.text-color }};
-      } 
+      }
 
 
       .vintage-military-{{ section.id }} a {
@@ -110,51 +110,47 @@
     data-section-type="featured-collection"
   >
     {%- style -%}
-    .section-header {
-      display:flex;
-    }
+      .section-header {
+        display: flex;
+      }
 
-    .section-header__title {
-    }
+      .section-header__title {
+      }
 
-    .section-header h2 {
-      background-color: #004a84;
-      width: auto;
-      padding: 25px 190px;
-      text-align:center;
-      color:white;
-      margin:0 auto;
-    }
+      .section-header h2 {
+        background-color: #004a84;
+        width: auto;
+        display:inline-block;
+        padding: 25px 190px;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+      }
 
-    .header-stripes {
-      background-color: #91002b;
-      border-bottom: 17px solid #00579c;
-      width:100%;
-    }
+      .header-stripes {
+        background-color: #91002b;
+        border-bottom: 17px solid #00579c;
+        width: 100%;
+      }
     {%- endstyle -%}
-    
+
     {%- if section.settings.title != blank -%}
       <div class="page-width-full">
-
         <div class="section-header">
-
           <div class="header-stripes">
-          <div class="section-header__title">
-            <h2>{{ section.settings.title }}</h2>
-          </div></div>
+            <div class="section-header__title">
+              <h2>{{ section.settings.title }}</h2>
+            </div>
+          </div>
         </div>
-
       </div>
-
     {% endif %}
 
-
-
-            {% if section.settings.view_all and section.settings.rows == 1 %}
-              <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
-                {{- 'collections.general.all_of_collection' | t -}}
-              </a>
-            {% endif %}
+    {% if section.settings.view_all and section.settings.rows == 1 %}
+      <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
+        {{- 'collections.general.all_of_collection' | t -}}
+      </a>
+    {% endif %}
     <div class="page-width page-width--flush-small">
       <div class="grid-overflow-wrapper">
         <div class="grid grid--uniform" data-aos="overflow__animation">
@@ -215,11 +211,11 @@
       </div>
     </div>
 
-          {% if section.settings.subtitle != blank %}
-            <h3 class="section-header__subtitle">
-                {{ section.settings.subtitle }}
-            </h3>
-          {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <h3 class="section-header__subtitle">
+        {{ section.settings.subtitle }}
+      </h3>
+    {% endif %}
   </div>
 </div>
 {% schema %}
