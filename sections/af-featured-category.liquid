@@ -92,12 +92,14 @@
 
   }
 
-      @media only screen and (max-width: 590px) {
+      @media only screen and (max-width: 589px) {
         .vintage-military-{{ section.id }} .grid__item  {
           flex:1 0 100%;
         }
-
-  }
+      .grid-overflow-wrapper .grid__item:first-child {
+        margin-left: 0px;
+      }
+    }
 
 {% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
