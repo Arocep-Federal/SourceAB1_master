@@ -73,8 +73,6 @@
     .vintage-military-{{ section.id }} .grid__item .sale-price  {
         color: {{ section.settings.text-color }};
       }
-
-
       .vintage-military-{{ section.id }} a {
         color: {{ section.settings.text-color }}
       }
@@ -88,18 +86,16 @@
           margin-bottom: 0px;    
           height: 100%;
         }
-
-
-  }
+      }
 
       @media only screen and (max-width: 589px) {
         .vintage-military-{{ section.id }} .grid__item  {
-          flex:1 0 100%;
+          flex:1 0 95%;
         }
-      .grid-overflow-wrapper .grid__item:first-child {
-        margin-left: 0px;
+        .grid-overflow-wrapper .grid__item:first-child {
+          margin-left: 0px;
+        }
       }
-    }
 
 {% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
