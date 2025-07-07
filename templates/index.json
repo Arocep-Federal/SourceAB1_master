@@ -23,6 +23,56 @@
         "vintage_military_overlay": "none"
       }
     },
+    "af_collection_list_XPJYdX": {
+      "type": "af-collection-list",
+      "blocks": {
+        "collection_DJRRge": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_6AG69j": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_kNAWAQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_4aGLb4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_DJRRge",
+        "collection_6AG69j",
+        "collection_kNAWAQ",
+        "collection_4aGLb4"
+      ],
+      "name": "AF Collection List",
+      "settings": {
+        "title": "Shop by Category",
+        "enable_gutter": false,
+        "background-color": "#FFF",
+        "heading-color": "#000"
+      }
+    },
     "af_featured_category_jBGAaR": {
       "type": "af-featured-category",
       "name": "AF Featured Categoy",
@@ -221,6 +271,7 @@
   },
   "order": [
     "af_vintage_military_X6nPTr",
+    "af_collection_list_XPJYdX",
     "af_featured_category_jBGAaR",
     "af_featured_category_mE6Phb",
     "partner_text_rUXN8d",
