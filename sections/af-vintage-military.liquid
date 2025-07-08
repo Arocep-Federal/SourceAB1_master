@@ -23,7 +23,6 @@
   .military-background--{{ section.id }} .hero__subtitle {
     margin-top:0px;
   }
-
 {%- endstyle -%}
 
 <div
@@ -36,7 +35,6 @@
     <div class="hero__text-wrap hero__text-wrap--absolute">
       <div class="page-width text-center">
         <div class="hero__text-content {{ section.settings.text_align }}">
-       
           {%- unless section.settings.headline == blank -%}
             <div class="hero__title">
               <div class="animation-cropper">
@@ -46,8 +44,8 @@
                   {%- endunless -%}
                   <h2>{{ section.settings.headline | newline_to_br }}</h2>
                 </div>
-                </div>
               </div>
+            </div>
           {%- endunless -%}
 
           {%- unless section.settings.subheadline == blank -%}
@@ -59,18 +57,14 @@
               </div>
             </div>
           {%- endunless -%}
-          <div>
-          <a href="{{ section.settings.link }}" class="view-all-btn">
-              {{ section.settings.link_text | escape }}
-            </a>
-            </div>
 
           {%- unless section.settings.link_text == blank -%}
-              
             <div class="hero__link">
               <div class="animation-cropper">
                 <div class="animation-contents">
-                
+                  <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
+                    {{ section.settings.link_text | escape }}
+                  </a>
                 </div>
               </div>
             </div>
@@ -140,53 +134,53 @@
       "id": "image",
       "label": "Image"
     },
-      {
-        "type": "url",
-        "id": "link",
-        "label": "Section link"
-      },
-      {
-        "type": "text",
-        "id": "link_text",
-        "label": "Button text",
-        "default": "Optional button"
-      },
-      {
-        "type": "select",
-        "id": "vintage_military_overlay",
-        "label": "Vintage Colorize",
-        "default": "none",
-        "options": [
-          {
-            "label": "Army Green",
-            "value": "#5f653e",
-          },
-          {
-            "label": "Marine Blue",
-            "value": "#091d33",
-          },
-          {
-            "label": "Vamp Red",
-            "value": "#34090a",
-          },
-          {
-            "label": "Sand Tan",
-            "value": "#c6b694",
-          },
-          {
-            "label": "Cement White",
-            "value": "#e2dfd1",
-          },
-          {
-            "label": "Gunmetal Grey",
-            "value": "#292929",
-          },
-          {
-            "label": "None",
-            "value": "none",
-          }
-        ]
-      }
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Section link"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Button text",
+      "default": "Optional button"
+    },
+    {
+      "type": "select",
+      "id": "vintage_military_overlay",
+      "label": "Vintage Colorize",
+      "default": "none",
+      "options": [
+        {
+          "label": "Army Green",
+          "value": "#5f653e"
+        },
+        {
+          "label": "Marine Blue",
+          "value": "#091d33"
+        },
+        {
+          "label": "Vamp Red",
+          "value": "#34090a"
+        },
+        {
+          "label": "Sand Tan",
+          "value": "#c6b694"
+        },
+        {
+          "label": "Cement White",
+          "value": "#e2dfd1"
+        },
+        {
+          "label": "Gunmetal Grey",
+          "value": "#292929"
+        },
+        {
+          "label": "None",
+          "value": "none"
+        }
+      ]
+    }
   ],
   "presets": [
     {
