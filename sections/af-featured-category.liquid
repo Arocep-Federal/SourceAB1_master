@@ -209,23 +209,6 @@
       .sub-btn-wrap.single {
        justify-content:center;
       }
-
-      .btn-wrapper {
-        border: 1px solid green;
-        width:auto;
-        display:inline;
-      }
-      .btn-wrapper:before, 
-      .btn-wrapper:after {
-        -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-        -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-        box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
-        -webkit-transform:rotate(-3deg);
-        -moz-transform:rotate(-3deg);
-        -ms-transform:rotate(-3deg);
-        -o-transform:rotate(-3deg);
-        transform:rotate(-3deg);
-      }
       @media only screen and (max-width: 1023px) {
         .vintage-military-{{ section.id }} .grid-product  {
           flex:1 0 35%; 
@@ -374,11 +357,9 @@
 
     {% if section.settings.subtitle == blank and section.settings.view_all %}
       <div class="sub-btn-wrap single">
-        <span class="btn-wrapper">
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
         Shop All {{ section.settings.title }} 
       </a>
-    </span>
       </div>
       {% endif %}
   </div>
