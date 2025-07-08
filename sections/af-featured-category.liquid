@@ -169,8 +169,23 @@
       .view-all-btn {
         background-color: #00589d;
         color:white;
-        padding:5px 20px; 
+        padding:20px 45px; 
       }
+      .view-all-btn:after,
+      .view-all-btn:before {
+        width:75px;
+        height:75px;
+      }
+
+
+      .view-all-btn:after {
+        background-color: #90002a;
+      }
+      .view-all-btn:before {
+
+        background-color: #0a406c;
+      }
+
       @media only screen and (max-width: 1023px) {
         .vintage-military-{{ section.id }} .grid-product  {
           flex:1 0 35%; 
