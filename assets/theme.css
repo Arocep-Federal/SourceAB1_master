@@ -10622,7 +10622,7 @@ html[dir=rtl] .grid-product__content{
 }
 
 .skrim__title{
-  bottom:50px;
+  bottom:100px;
   width:100%;
   text-align:center;
   color:var(--colorHeroText);
