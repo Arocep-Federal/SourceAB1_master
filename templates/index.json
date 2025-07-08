@@ -31,7 +31,7 @@
           "settings": {
             "collection": "office-supplies",
             "focal_point": "center center",
-            "size": "square-small"
+            "size": "tall"
           }
         },
         "collection_DJRRge": {
@@ -39,7 +39,7 @@
           "settings": {
             "collection": "toners",
             "focal_point": "center center",
-            "size": "square-small"
+            "size": "tall"
           }
         },
         "collection_4aGLb4": {
@@ -47,7 +47,7 @@
           "settings": {
             "collection": "medical",
             "focal_point": "center center",
-            "size": "square-small"
+            "size": "tall"
           }
         },
         "collection_6AG69j": {
@@ -55,7 +55,7 @@
           "settings": {
             "collection": "janitorial-sanitation",
             "focal_point": "center center",
-            "size": "square-small"
+            "size": "tall"
           }
         }
       },
