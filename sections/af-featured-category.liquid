@@ -207,6 +207,9 @@
         margin: 75px 0; 
         align-items:center;
       }
+      .sub-btn-wrap.single {
+       justify-content:center;
+      }
       @media only screen and (max-width: 1023px) {
         .vintage-military-{{ section.id }} .grid-product  {
           flex:1 0 35%; 
@@ -354,7 +357,7 @@
       {% endif %}
 
     {% if section.settings.subtitle == blank and section.settings.view_all %}
-      <div class="sub-btn-wrap">
+      <div class="sub-btn-wrap single">
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
         Shop All {{ section.settings.title }} 
       </a>
