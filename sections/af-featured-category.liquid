@@ -166,6 +166,9 @@
         font-size: 21px;
       }
 
+      .view-all-btn {
+        background-color: #00589d;
+      }
       @media only screen and (max-width: 1023px) {
         .vintage-military-{{ section.id }} .grid-product  {
           flex:1 0 35%; 
@@ -313,7 +316,7 @@
             <span>{{ section.settings.subtitle }}</span>
           </h3>
         </div>
-        <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
+        <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
         {{- 'collections.general.all_of_collection' | t -}}
       </a>
       </div>
@@ -321,7 +324,7 @@
 
     {% if section.settings.subtitle == blank and section.settings.view_all %}
       <div class="sub-btn-wrap">
-        <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
+        <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
         {{- 'collections.general.all_of_collection' | t -}}
       </a>
       </div>
