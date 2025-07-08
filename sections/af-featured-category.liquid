@@ -345,7 +345,7 @@
           </h3>
         </div>
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
-        {{- 'collections.general.all_of_collection' | t -}}
+        Shop All {{ section.settings.title }}
       </a>
       </div>
       {% endif %}
@@ -353,7 +353,7 @@
     {% if section.settings.subtitle == blank and section.settings.view_all %}
       <div class="sub-btn-wrap">
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
-        {{- 'collections.general.all_of_collection' | t -}}
+        Shop All {{ section.settings.title }}
       </a>
       </div>
       {% endif %}
