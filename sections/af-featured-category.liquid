@@ -325,7 +325,7 @@
       </div>
       {% endif %}
 
-    {% if blank and section.settings.view_all%}
+    {% if section.settings.view_all%}
       <div class="sub-btn-wrap">
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
         {{- 'collections.general.all_of_collection' | t -}}
