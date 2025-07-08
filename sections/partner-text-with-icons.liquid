@@ -46,11 +46,17 @@
         padding: 8px 20px;
       }
 
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before {
+      left:-20px;
+    }
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
+      right:-20px;
+    }
 
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before,
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
-      height:35px;
-      width:35px;
+      height:40px;
+      width:40px;
     }
   }
 {% endstyle %}
