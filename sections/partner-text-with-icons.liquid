@@ -45,13 +45,32 @@
       justify-content: center;
     }
 
+  @media only screen and (max-width: 1023px) {
+
+    .shopify-section:has(.text-with-icons-{{ section.id }}) .section-header h2 {
+      padding: 12px 35px;
+    }
+
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before {
+      left:-40px;
+    }
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
+      right:-40px;
+    }
+
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before,
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
+      height:55px;
+      width:55px;
+    }
+
+  }
+
   @media only screen and (max-width:589px){
 
-
-
-      .shopify-section:has(.text-with-icons-{{ section.id }}) .section-header h2 {
-        padding: 8px 35px;
-      }
+    .shopify-section:has(.text-with-icons-{{ section.id }}) .section-header h2 {
+      padding: 8px 35px;
+    }
 
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before {
       left:-40px;
@@ -66,6 +85,8 @@
       width:55px;
     }
   }
+
+
 {% endstyle %}
 <div
   class="text-with-icons-{{ section.id }}"
