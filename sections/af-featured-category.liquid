@@ -1,256 +1,254 @@
 {% style %}
-      .partner-section .grid__item {
-        margin-right:6px;
-      }
-      .partner-section .medium-up--one-quarter {
-        width:calc(25% - 6px)
+    .partner-section .grid__item {
+      margin-right:6px;
+    }
+    .partner-section .medium-up--one-quarter {
+      width:calc(25% - 6px)
 
-      }
-      .index-section:has(.vintage-military-{{ section.id }}) {
-        padding: 0;
-      }
-      .shopify-section:has(.vintage-military-{{ section.id }}) {
-        padding:0 0 10px;
-        background-color: {{ section.settings.background-color }};
-        background-image: url({{ section.settings.bg-image | image_url:width:auto }});
-        color: {{ section.settings.text-color }};
-        background-position: center;
-        background-size:cover;
-        background-repeat: no-repeat;
-        position:relative;
-        top:-10px; 
-      }
+    }
+    .index-section:has(.vintage-military-{{ section.id }}) {
+      padding: 0;
+    }
+    .shopify-section:has(.vintage-military-{{ section.id }}) {
+      padding:0 0 10px;
+      background-color: {{ section.settings.background-color }};
+      background-image: url({{ section.settings.bg-image | image_url:width:auto }});
+      color: {{ section.settings.text-color }};
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+      position:relative;
+      top:-10px;
+    }
 
 
-      .shopify-section:has(.vintage-military-{{ section.id }}) {
-        background-color: {{ section.settings.backgroundcolor }};
-        color: {{ section.settings.fontcolor }};
-        background-image: url({{ section.settings.image | image_url:width:auto }});
-        background-position: center;
-        background-size:cover;
-        background-repeat: no-repeat;
-      }
+    .shopify-section:has(.vintage-military-{{ section.id }}) {
+      background-color: {{ section.settings.backgroundcolor }};
+      color: {{ section.settings.fontcolor }};
+      background-image: url({{ section.settings.image | image_url:width:auto }});
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
 
-      .vintage-military-{{ section.id }} .grid {
-        display: flex;
-        flex-wrap: wrap;
-      }
+    .vintage-military-{{ section.id }} .grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-      .vintage-military-{{ section.id }} .grid-product  {
-        flex:1 0 21%;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: {{ section.settings.frame-color }};
-        margin-bottom:6px;
-      }
+    .vintage-military-{{ section.id }} .grid-product  {
+      flex:1 0 21%;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: {{ section.settings.frame-color }};
+      margin-bottom:6px;
+    }
 
-      .vintage-military-{{ section.id }} .link-container  {
-        display:flex;
-        flex-direction:column;    
+    .vintage-military-{{ section.id }} .link-container  {
+      display:flex;
+      flex-direction:column;
+      height: 100%;
+    }
+    .vintage-military-{{ section.id }} .link-container .grid-product__link  {
+      flex-grow:1;
+    }
+
+    .vintage-military-{{ section.id }} .link-container .view-btn  {
+      border-radius: 5px;
+      background-color: {{ section.settings.button-color }};
+      display:block;
+      padding: 5px;
+      text-align:center;
+      margin-top:20px;
+    }
+
+
+    .vintage-military-{{ section.id }} .grid-product__image-mask .grid__image-ratio--square  {
+      border-radius: 5px;
+      overflow:hidden;
+      padding: 10px;
+      background-color: white;
+    }
+
+  .vintage-military-{{ section.id }} .grid__item .sale-price  {
+      color: {{ section.settings.text-color }};
+    }
+    .vintage-military-{{ section.id }} a {
+      color: {{ section.settings.text-color }}
+    }
+    .vintage-military-{{ section.id }} .grid {
+      margin:0;
+    }
+
+
+    @media only screen and (min-width: 590px) {
+      .grid-product__content {
+        margin-bottom: 0px;
         height: 100%;
       }
-      .vintage-military-{{ section.id }} .link-container .grid-product__link  {
-        flex-grow:1;
-      }
+    }
 
-      .vintage-military-{{ section.id }} .link-container .view-btn  {
-        border-radius: 5px;
-        background-color: {{ section.settings.button-color }};
-        display:block;
-        padding: 5px;
-        text-align:center;
-        margin-top:20px;
-      }
+    .section-header {
+      display: flex;
+      position:relative;
+    }
 
+    .section-header__title {
+    }
 
-      .vintage-military-{{ section.id }} .grid-product__image-mask .grid__image-ratio--square  {
-        border-radius: 5px;
-        overflow:hidden;
-        padding: 10px;
-        background-color: white;
-      }
+    .section-header h2 {
+      background-color: #004a84;
+      display:inline;
+      padding: 25px 190px;
+      text-align: center;
+      color: white;
+      position:relative;
+      top:10px;
+    }
 
-    .vintage-military-{{ section.id }} .grid__item .sale-price  {
-        color: {{ section.settings.text-color }};
-      }
-      .vintage-military-{{ section.id }} a {
-        color: {{ section.settings.text-color }}
-      }
-      .vintage-military-{{ section.id }} .grid {
-        margin:0;
-      }
+    .section-header h2 span {
+      padding:15px 40px;
+      background-color: #004a84;
+      position:relative;
+      z-index:6;
+    }
 
 
-      @media only screen and (min-width: 590px) {
-        .grid-product__content {
-          margin-bottom: 0px;    
-          height: 100%;
-        }
-      }
+    .section-header .hdr-wrap:after {
+      right:0;
+    }
+    .section-header .hdr-wrap:before {
+      left:0;
+    }
 
-      .section-header {
-        display: flex;
-        position:relative;
-      }
+    .section-header .hdr-wrap:after,
+    .section-header .hdr-wrap:before {
+      content:"";
+      background-color: #0a406c;
+      height: 33px;
+      width:50%;
+      position:absolute;
+      z-index:2;
+      bottom:0px;
+    }
 
-      .section-header__title {
+    .header-stripes {
+      background-color: #91002b;
+      border-bottom: 17px solid #00579c;
+      width: 100%;
+      height:84px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      position:relative;
+      z-index:4;
+    }
+
+    .vintage-military-{{ section.id }} .grid-product__tag--sale {
+      top: 10px;
+      background-color: {{ section.settings.frame-color }};
+    }
+
+
+    .vintage-military-{{ section.id }} .sub-wrap {
+      background-color: {{ section.settings.frame-color }};
+      padding:50px 30px;
+      text-align:right;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      width:50%;
+    }
+
+    .vintage-military-{{ section.id }} h3.section-header__subtitle span {
+      display:inline-block;
+      width:600px;
+      font-size: 21px;
+    }
+
+    .view-all-btn {
+      height:65px;
+      background-color: #00589d;
+      color:white;
+      position:relative;
+      padding: 20px 50px 20px;
+      box-shadow: 0px 20px 20px -10px rgba(0,0,0,.6);
+      margin-left: 100px;
+    }
+    .view-all-btn:after,
+    .view-all-btn:before {
+      content:"";
+      width:65px;
+      height:65px;
+      position:absolute;
+      display:inline-block;
+      background-size: contain;
+      top:0;
+    }
+
+
+    .view-all-btn:after {
+      right:-65px;
+      background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' width='213.71' height='208.35' viewBox='0 0 213.71 208.35'%3E%3Crect x='.5' y='.5' width='212.71' height='207.35' fill='none' stroke='%2390182d' stroke-miterlimit='10'/%3E%3Cpath d='M131.41,99.04l-43.97-25.39c-3.95-2.28-8.89.57-8.89,5.13v50.78c0,4.56,4.94,7.42,8.89,5.13l43.97-25.39c3.95-2.28,3.95-7.99,0-10.27Z' fill='%23fff'/%3E%3C/svg%3E");
+      background-color: #90002a;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .view-all-btn:before {
+      left:-65px;
+      background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' width='213.71' height='208.35' viewBox='0 0 213.71 208.35'%3E%3Crect x='.5' y='.5' width='212.71' height='207.35' fill='none' stroke='%2312416c' stroke-miterlimit='10'/%3E%3Cpath d='M111.86,64.64l8.22,25.31h26.61c5.1,0,7.22,6.53,3.09,9.52l-21.53,15.64,8.22,25.31c1.58,4.85-3.97,8.88-8.1,5.89l-21.53-15.64-21.53,15.64c-4.13,3-9.68-1.04-8.1-5.89l8.22-25.31-21.53-15.64c-4.13-3-2.01-9.52,3.09-9.52h26.61s8.22-25.31,8.22-25.31c1.58-4.85,8.44-4.85,10.01,0Z' fill='%23fff'/%3E%3C/svg%3E");
+      background-color: #0a406c;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .sub-btn-wrap {
+      display:flex;
+      margin: 75px 0;
+      align-items:center;
+    }
+    .sub-btn-wrap.single {
+     justify-content:center;
+    }
+    @media only screen and (max-width: 1023px) {
+      .vintage-military-{{ section.id }} .grid-product  {
+        flex:1 0 35%;
       }
 
       .section-header h2 {
+        padding: 35px 90px;
+        font-size: 1.8rem;
+        top:5px;
+      }
+    }
+    @media only screen and (max-width: 589px) {
+
+      .vintage-military-{{ section.id }} .grid {
+        /* display: flex; */
+        flex-wrap: nowrap;
+      }
+      .vintage-military-{{ section.id }} .grid-product  {
+        flex:1 0 60%;
+      }
+      .section-header h2 {
         background-color: #004a84;
+        box-shadow:0 0 10px black;
         display:inline;
-        padding: 25px 190px;
+        padding: 40px 25px;
         text-align: center;
         color: white;
-        position:relative;
-        top:10px;
-      }
-
-      .section-header h2 span {
-        padding:15px 40px;
-        background-color: #004a84;
-        position:relative;
-        z-index:6;
-      }
-
-
-      .section-header .hdr-wrap:after {
-        right:0;
-      }
-      .section-header .hdr-wrap:before {
-        left:0;
-      }
-
-      .section-header .hdr-wrap:after,
-      .section-header .hdr-wrap:before {
-        content:"";
-        background-color: #0a406c;
-        height: 33px; 
-        width:50%;
-        position:absolute;
-        z-index:2;
-        bottom:0px;
-      }
-
-      .header-stripes {
-        background-color: #91002b;
-        border-bottom: 17px solid #00579c;
-        width: 100%;
-        height:84px;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        z-index:4;
-      }
-
-      .vintage-military-{{ section.id }} .grid-product__tag--sale {
-        top: 10px;
-        background-color: {{ section.settings.frame-color }};
-      }
-
-
-      .vintage-military-{{ section.id }} .sub-wrap {
-        background-color: {{ section.settings.frame-color }};
-        padding:50px 30px;
-        text-align:right;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        width:50%;
-      }
-
-      .vintage-military-{{ section.id }} h3.section-header__subtitle span {
-        display:inline-block;
-        width:600px;
-        font-size: 21px;
-      }
-
-      .view-all-btn {
-        height:65px;
-        background-color: #00589d;
-        color:white;
-        position:relative;
-        padding: 20px 50px 20px; 
-        box-shadow: 0px 20px 20px -10px rgba(0,0,0,.6);
-        margin-left: 100px; 
-      }
-      .view-all-btn:after,
-      .view-all-btn:before {    
-        content:"";
-        width:65px;
-        height:65px;
-        position:absolute;
-        display:inline-block;
-        background-size: contain; 
+        font-size: 1.4rem;
         top:0;
       }
 
+    .section-header h2 span {
+      padding:15px 10px;
+      background-color: #004a84;
+      position:relative;
+      z-index:3;
+    }
 
-      .view-all-btn:after {
-        right:-65px;
-        background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' width='213.71' height='208.35' viewBox='0 0 213.71 208.35'%3E%3Crect x='.5' y='.5' width='212.71' height='207.35' fill='none' stroke='%2390182d' stroke-miterlimit='10'/%3E%3Cpath d='M131.41,99.04l-43.97-25.39c-3.95-2.28-8.89.57-8.89,5.13v50.78c0,4.56,4.94,7.42,8.89,5.13l43.97-25.39c3.95-2.28,3.95-7.99,0-10.27Z' fill='%23fff'/%3E%3C/svg%3E");
-        background-color: #90002a;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-      }
-      .view-all-btn:before {
-        left:-65px;
-        background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' width='213.71' height='208.35' viewBox='0 0 213.71 208.35'%3E%3Crect x='.5' y='.5' width='212.71' height='207.35' fill='none' stroke='%2312416c' stroke-miterlimit='10'/%3E%3Cpath d='M111.86,64.64l8.22,25.31h26.61c5.1,0,7.22,6.53,3.09,9.52l-21.53,15.64,8.22,25.31c1.58,4.85-3.97,8.88-8.1,5.89l-21.53-15.64-21.53,15.64c-4.13,3-9.68-1.04-8.1-5.89l8.22-25.31-21.53-15.64c-4.13-3-2.01-9.52,3.09-9.52h26.61s8.22-25.31,8.22-25.31c1.58-4.85,8.44-4.85,10.01,0Z' fill='%23fff'/%3E%3C/svg%3E");
-        background-color: #0a406c;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-      }
-
-      .sub-btn-wrap {
-        display:flex;
-        margin: 75px 0; 
-        align-items:center;
-      }
-      .sub-btn-wrap.single {
-       justify-content:center;
-      }
-      @media only screen and (max-width: 1023px) {
-        .vintage-military-{{ section.id }} .grid-product  {
-          flex:1 0 35%; 
-        }
-
-        .section-header h2 {
-          padding: 35px 90px;
-          font-size: 1.8rem;
-          top:5px; 
-        }
-      }
-      @media only screen and (max-width: 589px) {
-
-        .vintage-military-{{ section.id }} .grid {
-          /* display: flex; */
-          flex-wrap: nowrap;
-        }
-        .vintage-military-{{ section.id }} .grid-product  {
-          flex:1 0 60%;
-        }
-        .section-header h2 {
-          background-color: #004a84;
-          box-shadow:0 0 10px black;
-          display:inline;
-          padding: 40px 25px;
-          text-align: center;
-          color: white;  
-          font-size: 1.4rem;
-          top:0;
-        }
-
-      .section-header h2 span {
-        padding:15px 10px;
-        background-color: #004a84;
-        position:relative;
-        z-index:3;
-      }
-
-      }
-      
-
-    {%- endstyle -%}
+    }
+{% endstyle %}
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
     assign per_row = section.settings.per_row
@@ -262,20 +260,20 @@
     endcapture
   -%}
 
-
   <div
     id="CollectionSection-{{ section.id }}"
     data-section-id="{{ section.id }}"
     data-section-type="featured-collection"
   >
-
     {%- if section.settings.title != blank -%}
       <div class="page-width-full">
         <div class="section-header">
           <div class="header-stripes">
             <div class="section-header__title">
               <div class="hdr-wrap">
-                <h2><span>Shop {{ section.settings.title }}</span></h2>
+                <h2>
+                  <span>Shop {{ section.settings.title }}</span>
+                </h2>
               </div>
             </div>
           </div>
@@ -324,25 +322,29 @@
 
             {% if section.settings.view_all %}
               {% if section.settings.rows > 1 %}
-                {% comment %} <div class="grid__item small--hide text-center">
-                  <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">
-                    {{- 'collections.general.all_of_collection' | t -}}
-                  </a>
-                </div> {% endcomment %}
+                {% comment %}
+                  <div class="grid__item small--hide text-center">
+                    <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">
+                      {{- 'collections.general.all_of_collection' | t -}}
+                    </a>
+                  </div>
+                {% endcomment %}
               {% endif %}
 
-              {% comment %} <div class="grid__item grid__item--view-all text-center {{ gridView }} medium-up--hide">
-                <a href="{{ collections[section.settings.home_featured_products].url }}" class="grid-product__see-all">
-                  {{ 'collections.general.view_all_products_html' | t: count: collection.products_count }}
-                </a>
-              </div> {% endcomment %}
+              {% comment %}
+                <div class="grid__item grid__item--view-all text-center {{ gridView }} medium-up--hide">
+                  <a href="{{ collections[section.settings.home_featured_products].url }}" class="grid-product__see-all">
+                    {{ 'collections.general.view_all_products_html' | t: count: collection.products_count }}
+                  </a>
+                </div>
+              {% endcomment %}
             {% endif %}
           {% endif %}
         </div>
       </div>
     </div>
 
-    {% if section.settings.subtitle != blank and section.settings.view_all%}
+    {% if section.settings.subtitle != blank and section.settings.view_all %}
       <div class="sub-btn-wrap">
         <div class="sub-wrap">
           <h3 class="section-header__subtitle">
@@ -350,18 +352,18 @@
           </h3>
         </div>
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
-        Shop All {{ section.settings.title }} 
-      </a>
+          Shop All {{ section.settings.title }}
+        </a>
       </div>
-      {% endif %}
+    {% endif %}
 
     {% if section.settings.subtitle == blank and section.settings.view_all %}
       <div class="sub-btn-wrap single">
         <a href="{{ collections[section.settings.home_featured_products].url }}" class="view-all-btn">
-        Shop All {{ section.settings.title }} 
-      </a>
+          Shop All {{ section.settings.title }}
+        </a>
       </div>
-      {% endif %}
+    {% endif %}
   </div>
 </div>
 {% schema %}
