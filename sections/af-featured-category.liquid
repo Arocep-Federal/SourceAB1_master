@@ -312,13 +312,18 @@
       </div>
     </div>
 
-    {% if section.settings.subtitle != blank %}
-      <div class="sub-wrap">
-        <h3 class="section-header__subtitle">
-          <span>{{ section.settings.subtitle }}</span>
-        </h3>
+    {% if section.settings.subtitle != blank and section.settings.view_all%}
+      <div class="sub-btn-wrap">
+        <div class="sub-wrap">
+          <h3 class="section-header__subtitle">
+            <span>{{ section.settings.subtitle }}</span>
+          </h3>
+        </div>
+        <a href="{{ collections[section.settings.home_featured_products].url }}" class="section-header__link">
+        {{- 'collections.general.all_of_collection' | t -}}
+      </a>
       </div>
-    {% endif %}
+      {% endif %}
   </div>
 </div>
 {% schema %}
