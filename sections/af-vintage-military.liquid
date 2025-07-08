@@ -56,17 +56,19 @@
                 <div class="animation-contents">
                   {{ section.settings.subheadline | escape }}
                 </div>
+                <a href="{{ section.settings.link }}" class="view-all-btn">
+                    {{ section.settings.link_text | escape }}
+                  </a>
               </div>
             </div>
           {%- endunless -%}
 
           {%- unless section.settings.link_text == blank -%}
+              
             <div class="hero__link">
               <div class="animation-cropper">
                 <div class="animation-contents">
-                  <a href="{{ section.settings.link }}" class="view-all-btn">
-                    {{ section.settings.link_text | escape }}
-                  </a>
+                
                 </div>
               </div>
             </div>
