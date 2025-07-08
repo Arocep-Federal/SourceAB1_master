@@ -60,7 +60,6 @@
         padding: 5px;
         text-align:center;
         margin-top:20px;
-        box-shadow: 0 0 10px black;
       }
 
 
@@ -173,6 +172,7 @@
         color:white;
         position:relative;
         padding: 25px 50px 25px; 
+        box-shadow: 0 0 10px black;
       }
       .view-all-btn:after,
       .view-all-btn:before {       
@@ -188,14 +188,17 @@
       .view-all-btn:after {
         right:-75px;
         background-color: #90002a;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
       }
       .view-all-btn:before {
         left:-75px;
         background-color: #0a406c;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
       }
 
       .sub-btn-wrap {
-
         display:flex;
       }
       @media only screen and (max-width: 1023px) {
