@@ -224,13 +224,6 @@
     endcapture
   -%}
 
-  {% style %}
-    {% if section.settings.title == blank and section.settings.view_all %}
-      #CollectionSection-{{ section.id }} .section-header__link {
-        padding-bottom: 10px;
-      }
-    {% endif %}
-  {% endstyle %}
 
   <div
     id="CollectionSection-{{ section.id }}"
