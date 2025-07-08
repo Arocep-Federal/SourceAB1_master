@@ -10,6 +10,9 @@
     }
 
 
+    .shopify-section:has(.vintage-military-{{ section.id }}) h2 {
+      color:{{ section.settings.headercolor }};
+    }
     .shopify-section:has(.vintage-military-{{ section.id }}) p {
       font-size:{{ section.settings.font_size }}px;
     }
@@ -103,6 +106,12 @@
       "type": "color",
       "id": "backgroundcolor",
       "label": "Background Color",
+      "default": "#FFF"
+    },
+    {
+      "type": "color",
+      "id": "headercolor",
+      "label": "Headline Color",
       "default": "#FFF"
     },
     {

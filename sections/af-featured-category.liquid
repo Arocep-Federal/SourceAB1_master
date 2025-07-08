@@ -298,9 +298,11 @@
     </div>
 
     {% if section.settings.subtitle != blank %}
-      <h3 class="section-header__subtitle">
-        {{ section.settings.subtitle }}
-      </h3>
+      <div class="sub-wrap">
+        <h3 class="section-header__subtitle">
+          {{ section.settings.subtitle }}
+        </h3>
+      </div>
     {% endif %}
   </div>
 </div>
