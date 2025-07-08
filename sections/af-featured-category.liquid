@@ -160,6 +160,12 @@
         font-size: 28px;
       }
 
+      .vintage-military-{{ section.id }} span {
+        display:inline-block;
+        width: 400px;
+        font-size: 28px;
+      }
+
       @media only screen and (max-width: 1023px) {
         .vintage-military-{{ section.id }} .grid-product  {
           flex:1 0 35%; 
@@ -309,7 +315,7 @@
     {% if section.settings.subtitle != blank %}
       <div class="sub-wrap">
         <h3 class="section-header__subtitle">
-          {{ section.settings.subtitle }}
+          <span>{{ section.settings.subtitle }}</span>
         </h3>
       </div>
     {% endif %}
