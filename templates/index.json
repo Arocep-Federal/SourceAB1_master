@@ -113,6 +113,7 @@
         "align_text": "center",
         "font_size": 32,
         "backgroundcolor": "#006dc6",
+        "headercolor": "#ffffff",
         "image": "shopify://shop_images/bg-ab1-program.jpg",
         "link": "",
         "fontcolor": "#ffffff"
@@ -166,17 +167,16 @@
         "text_block_GG8g87",
         "text_block_rJwhx4"
       ],
-      "custom_css": [
-        "h2 {color: #002974;}"
-      ],
+      "custom_css": [],
       "settings": {
-        "bg_color": "#d7ebff",
+        "bg_color": "#deecff",
         "image": "shopify://shop_images/bg22-ab1.jpg",
         "title": "Program Standards",
         "align_text": "center",
         "desktop_columns_per_row": 3,
-        "h2_color": "#002974",
-        "icon_color": "#002974",
+        "headingcolor": "#ffffff",
+        "h2_color": "#0a406c",
+        "icon_color": "#0a406c",
         "button_label": "",
         "button_link": ""
       }
