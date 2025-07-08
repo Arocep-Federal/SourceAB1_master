@@ -316,7 +316,7 @@
                 fallback: '66vw'
               -%}
             {%- endfor -%}
-
+{% comment %} 
             {% if section.settings.view_all %}
               {% if section.settings.rows > 1 %}
                 <div class="grid__item small--hide text-center">
@@ -324,7 +324,7 @@
                     {{- 'collections.general.all_of_collection' | t -}}
                   </a>
                 </div>
-              {% endif %}
+              {% endif %} {% endcomment %}
 
               <div class="grid__item grid__item--view-all text-center {{ gridView }} medium-up--hide">
                 <a href="{{ collections[section.settings.home_featured_products].url }}" class="grid-product__see-all">
