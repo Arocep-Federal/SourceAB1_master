@@ -77,13 +77,14 @@
       "type": "af-featured-category",
       "custom_css": [],
       "settings": {
-        "title": "Shop Best Sellers",
+        "title": "Best Sellers",
         "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
         "background-color": "#ffffff",
         "text-color": "#ffffff",
         "frame-color": "#0a406c",
         "button-color": "#01589f",
         "home_featured_products": "abilityone-catalog",
+        "view_all": true,
         "per_row": 4,
         "rows": 2
       }
@@ -130,6 +131,7 @@
         "frame-color": "#0a406c",
         "button-color": "#01589f",
         "home_featured_products": "file-folders-portable-storage-box-files",
+        "view_all": true,
         "per_row": 4,
         "rows": 1
       }
@@ -249,6 +251,7 @@
         "frame-color": "#91002b",
         "button-color": "#ce013c",
         "home_featured_products": "ink-toners",
+        "view_all": true,
         "per_row": 4,
         "rows": 1
       }
