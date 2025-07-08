@@ -12,6 +12,12 @@
 
 
 
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before {
+      left:0;
+    }
+    .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
+      right:0;
+    }
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2:before,
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2:after {
       content: "";
@@ -21,6 +27,7 @@
       width:95px;
       position:absolute; 
     }
+    
     .shopify-section:has(.text-with-icons-{{ section.id }}) h2 {
       color:{{ section.settings.headingcolor }};
       position:relative;
