@@ -9009,7 +9009,7 @@ h2 {
   }
 
 .hero__link{
-  display:inline-block;
+  /* display:inline-block; */
 }
 
 .video-interactable .hero__link{
