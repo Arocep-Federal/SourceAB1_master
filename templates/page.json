@@ -28,24 +28,6 @@
         "vintage_military_overlay": "none"
       }
     },
-    "vintage_military_6m3YqL": {
-      "type": "vintage-military",
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "background": "#111111",
-        "fontcolor": "#ffffff",
-        "kicker": "Our Mission",
-        "headline": "Empowering Federal Excellence",
-        "subheadline": "Delivering Exceptional Solutions, Simplifying Procurement, and Enabling Mission Success.",
-        "text_align": "vertical-bottom horizontal-center",
-        "image": "shopify://shop_images/AdobeStock_359492610_2_757b6176-a689-4058-9a26-6c3be16c73b1.png",
-        "height": 97,
-        "link": "",
-        "link_text": "",
-        "vintage_military_overlay": "#e2dfd1"
-      }
-    },
     "text_columns_Xgn7cY": {
       "type": "text-columns",
       "blocks": {
@@ -106,7 +88,7 @@
       "type": "af-text-and-image-rvrsbl",
       "custom_css": [],
       "settings": {
-        "bg-color": "#002e50",
+        "bg-color": "#ffffff",
         "color": "#ffffff",
         "image": "shopify://shop_images/abt_mission2.jpg",
         "subtitle": "",
@@ -128,7 +110,7 @@
       "type": "af-text-and-image-rvrsbl",
       "custom_css": [],
       "settings": {
-        "bg-color": "#002e50",
+        "bg-color": "#ffffff",
         "color": "#ffffff",
         "image": "shopify://shop_images/abt_compliance2.jpg",
         "subtitle": "",
@@ -150,7 +132,7 @@
       "type": "af-text-and-image-rvrsbl",
       "custom_css": [],
       "settings": {
-        "bg-color": "#002e50",
+        "bg-color": "#ffffff",
         "color": "#ffffff",
         "image": "shopify://shop_images/abt_accnt2.jpg",
         "subtitle": "",
@@ -196,37 +178,15 @@
         "fontcolor": "#ffffff",
         "narrow_column": false
       }
-    },
-    "af_hero_KmjyiN": {
-      "type": "af-hero",
-      "disabled": true,
-      "custom_css": [],
-      "settings": {
-        "fontcolor": "#ffffff",
-        "kicker": "Proud to Be",
-        "headline": "Woman Owned",
-        "subheadline": "Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.",
-        "button_label": "",
-        "button_link": "",
-        "text_align": "vertical-bottom horizontal-right",
-        "image": "shopify://shop_images/bg-woman-owned.png",
-        "focal_point": "20% 50%",
-        "color_border": "#f4f4f4",
-        "height": 450,
-        "parallax": true,
-        "vintage_military_overlay": "none"
-      }
     }
   },
   "order": [
     "main",
     "af_vintage_military_DNPeCA",
-    "vintage_military_6m3YqL",
     "text_columns_Xgn7cY",
     "af_text_and_image_rvrsbl_CY3FVd",
     "af_text_and_image_rvrsbl_RRk8B6",
     "af_text_and_image_rvrsbl_hGCtLt",
-    "rich_text_XDkQVQ",
-    "af_hero_KmjyiN"
+    "rich_text_XDkQVQ"
   ]
 }
