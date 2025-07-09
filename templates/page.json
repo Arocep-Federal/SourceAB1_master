@@ -28,36 +28,6 @@
         "vintage_military_overlay": "none"
       }
     },
-    "rich_text_N3Ly7i": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_ajNcWe": {
-          "type": "heading",
-          "settings": {
-            "title": "Source AbilityOne™"
-          }
-        },
-        "text_zLXdEi": {
-          "type": "text",
-          "settings": {
-            "text": "<p>is a mission-first extension of Arocep Federal, created to streamline access to over 6,000 AbilityOne® products for government buyers and commercial organizations alike.<br/><br/>As a <strong>Five-Star Rated</strong> federal supply partner with more than 20 years of past performance, Arocep Federal launched this platform to simplify the procurement of mandatory-source items under the AbilityOne® Program.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_ajNcWe",
-        "text_zLXdEi"
-      ],
-      "name": "t:sections.rich-text.presets.rich_text.name",
-      "settings": {
-        "align_text": "center",
-        "font_size": 32,
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff",
-        "bgimage": "shopify://shop_images/arocep-logo-black-bg-distressed.png",
-        "narrow_column": false
-      }
-    },
     "text_columns_Xgn7cY": {
       "type": "text-columns",
       "blocks": {
@@ -112,6 +82,36 @@
         "fontcolor": "#ffffff",
         "align_text": "center",
         "bgimage": "shopify://shop_images/bg-ab1-program.jpg"
+      }
+    },
+    "rich_text_N3Ly7i": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ajNcWe": {
+          "type": "heading",
+          "settings": {
+            "title": "Source AbilityOne™"
+          }
+        },
+        "text_zLXdEi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>is a mission-first extension of Arocep Federal, created to streamline access to over 6,000 AbilityOne® products for government buyers and commercial organizations alike.<br/><br/>As a <strong>Five-Star Rated</strong> federal supply partner with more than 20 years of past performance, Arocep Federal launched this platform to simplify the procurement of mandatory-source items under the AbilityOne® Program.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ajNcWe",
+        "text_zLXdEi"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "bgimage": "shopify://shop_images/arocep-logo-black-bg-distressed.png",
+        "narrow_column": false
       }
     },
     "af_text_and_image_rvrsbl_CY3FVd": {
@@ -184,8 +184,8 @@
   "order": [
     "main",
     "af_vintage_military_DNPeCA",
-    "rich_text_N3Ly7i",
     "text_columns_Xgn7cY",
+    "rich_text_N3Ly7i",
     "af_text_and_image_rvrsbl_CY3FVd",
     "af_text_and_image_rvrsbl_RRk8B6",
     "af_text_and_image_rvrsbl_hGCtLt"
