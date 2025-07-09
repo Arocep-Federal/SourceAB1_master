@@ -78,7 +78,6 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "bgimage": "shopify://shop_images/bg17-ab1.jpg",
         "title": "Contact Us",
         "text": "",
         "show_phone": false,
