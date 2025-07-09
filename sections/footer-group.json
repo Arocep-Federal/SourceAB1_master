@@ -109,21 +109,12 @@
             "richtext": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>",
             "container_width": 33
           }
-        },
-        "footer-0": {
-          "type": "logo_social",
-          "settings": {
-            "logo": "shopify://shop_images/SourceAB1_fullColor.png",
-            "desktop_logo_height": 110,
-            "container_width": 41
-          }
         }
       },
       "block_order": [
         "footer-1",
         "custom_K38fFr",
-        "footer-2",
-        "footer-0"
+        "footer-2"
       ],
       "settings": {
         "show_locale_selector": true,
