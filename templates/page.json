@@ -54,7 +54,7 @@
             "enable_image": true,
             "image": "shopify://shop_images/icon_0001_teamwork.png",
             "image_mask": "square",
-            "image_width": 250,
+            "image_width": 150,
             "title": "Partnership",
             "text": "<p>We work in lockstep with AbilityOne® nonprofits</p>",
             "button_label": "",
@@ -67,7 +67,7 @@
             "enable_image": true,
             "image": "shopify://shop_images/icon_0002_excellence.png",
             "image_mask": "square",
-            "image_width": 250,
+            "image_width": 150,
             "title": "Performance",
             "text": "<p>Backed by over 20 years of federal contracting success.</p>",
             "button_label": "",
@@ -80,7 +80,7 @@
             "enable_image": true,
             "image": "shopify://shop_images/icon_0001_purpose.png",
             "image_mask": "square",
-            "image_width": 250,
+            "image_width": 150,
             "title": "Purpose",
             "text": "<p>Every order supports the AbilityOne® workforce</p>",
             "button_label": "",
@@ -93,7 +93,9 @@
         "text_block_fGyd9k",
         "text_block_UhaLAf"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "{height: 400px; padding: 20px;}"
+      ],
       "settings": {
         "title": "Our Values",
         "fontcolor": "#ffffff",
@@ -167,8 +169,38 @@
         "lazyload_images": true
       }
     },
+    "rich_text_XDkQVQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NWj7ge": {
+          "type": "heading",
+          "settings": {
+            "title": "Source AbilityOne™"
+          }
+        },
+        "text_m4kqGq": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>is a mission-first extension of Arocep Federal, created to streamline access to over 6,000 AbilityOne® products for government buyers and commercial organizations alike.</strong><br/>2As a Five-Star Rated federal supply partner with more than 20 years of past performance, Arocep Federal launched this platform to simplify the procurement of mandatory-source items under the AbilityOne® Program. Our goal is to make it easier for contracting officers, end users, and purchase cardholders to fulfill compliance requirements while supporting the employment of individuals who are blind or have significant disabilities.</p><p><strong>We connect you directly to the entire AbilityOne manufacturing base—no middle layers, no limited catalogs.</strong><br/>Through our close working relationships with every participating nonprofit agency under National Industries for the Blind (NIB) and SourceAmerica, we offer access to the full range of National Stock Numbers (NSNs) and commercial equivalents manufactured under the AbilityOne® Program. Whether you're sourcing office essentials, janitorial supplies, MRO products, tactical gear, or COVID-response materials, our catalog ensures 100% alignment with FAR Subpart 8.7 and the Javits-Wagner-O’Day (JWOD) Act.</p><p><strong>Designed for Government. Open to All.</strong><br/>While this site is optimized for federal buyers—with simplified GSA-compliant pricing, automated purchase workflows, and AbilityOne-only filtering—Source AbilityOne™ also welcomes state and local government agencies, educational institutions, B2B buyers, and the public. We believe in expanding the reach and impact of the AbilityOne mission through transparency, ease of access, and responsive customer support.</p><p><strong>Every order placed through Source AbilityOne™ supports real jobs, real people, and a purpose that goes beyond the transaction.</strong><br/>Backed by Arocep Federal’s history of excellence in federal procurement, this platform exists to make compliance easier, impact stronger, and procurement faster—for everyone.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NWj7ge",
+        "text_m4kqGq"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#000",
+        "fontcolor": "#fff",
+        "narrow_column": false
+      }
+    },
     "af_hero_KmjyiN": {
       "type": "af-hero",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "fontcolor": "#ffffff",
@@ -195,6 +227,7 @@
     "af_text_and_image_rvrsbl_CY3FVd",
     "af_text_and_image_rvrsbl_RRk8B6",
     "af_text_and_image_rvrsbl_hGCtLt",
+    "rich_text_XDkQVQ",
     "af_hero_KmjyiN"
   ]
 }
