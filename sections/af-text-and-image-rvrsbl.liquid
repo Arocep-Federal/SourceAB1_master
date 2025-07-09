@@ -12,48 +12,20 @@
 
   #shopify-section-{{ section.id }} .feature-row__text {
     background-color: #0a406c;
-    padding:125px 25px;
-    border-radius: 10px;
+    padding:50px;
+    border-radius: 0px;
     position:relative;
     z-index:3;
     
     {%- if section.settings.layout == 'left' -%}
-      right:150px;
+      right:0px;
     {%- endif -%}
     
     {%- if section.settings.layout == 'right' -%}
-      left:150px;
+      left:0px;
     {%- endif -%}
   }
       
-  #shopify-section-{{ section.id }} .image-wrap {
-    overflow: hidden;
-
-    {%- if section.settings.layout == 'left' -%}
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-    {%- endif -%}
-    
-    {%- if section.settings.layout == 'right' -%}
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-    {%- endif -%}
-  }
-
-/* 
-#shopify-section-{{ section.id }} .feature-row .stripe {
-  width:90px;
-  height:1081px;
-  background-image: url("https://cdn.shopify.com/s/files/1/0666/7884/9714/files/stripe-vert-flipflop.png?v=1726780057");
-  position:absolute;
-  bottom:-200px;
-  {%- if section.settings.layout == 'left' -%}
-    right:20px;
-  {%- endif -%}
-  {%- if section.settings.layout == 'right' -%}
-    left:20px;
-  {%- endif -%}
-} */
 
 
 
