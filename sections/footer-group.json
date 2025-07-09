@@ -114,8 +114,8 @@
           "type": "logo_social",
           "settings": {
             "logo": "shopify://shop_images/SourceAB1_fullColor.png",
-            "desktop_logo_height": 64,
-            "container_width": 20
+            "desktop_logo_height": 110,
+            "container_width": 41
           }
         }
       },
