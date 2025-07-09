@@ -80,8 +80,7 @@
       "type": "contact-quote",
       "custom_css": [],
       "settings": {
-        "bgimage": "shopify://shop_images/bg17-ab1.jpg",
-        "title": "Request for Quote",
+        "title": "",
         "text": "",
         "narrow_column": true
       }
