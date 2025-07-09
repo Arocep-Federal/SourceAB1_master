@@ -118,7 +118,7 @@
       "type": "af-text-and-image-rvrsbl",
       "custom_css": [],
       "settings": {
-        "bg-color": "#ffffff",
+        "bg-color": "#002e50",
         "color": "#ffffff",
         "image": "shopify://shop_images/abt_mission2.jpg",
         "subtitle": "",
@@ -162,7 +162,7 @@
       "type": "af-text-and-image-rvrsbl",
       "custom_css": [],
       "settings": {
-        "bg-color": "#ffffff",
+        "bg-color": "#730000",
         "color": "#ffffff",
         "image": "shopify://shop_images/abt_accnt2.jpg",
         "subtitle": "",
