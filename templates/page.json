@@ -31,6 +31,7 @@
     "vintage_military_6m3YqL": {
       "type": "vintage-military",
       "disabled": true,
+      "custom_css": [],
       "settings": {
         "background": "#111111",
         "fontcolor": "#ffffff",
@@ -93,9 +94,7 @@
         "text_block_fGyd9k",
         "text_block_UhaLAf"
       ],
-      "custom_css": [
-        "{height: 400px; padding: 20px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Our Values",
         "fontcolor": "#ffffff",
@@ -193,8 +192,8 @@
       "settings": {
         "align_text": "center",
         "font_size": 32,
-        "backgroundcolor": "#000",
-        "fontcolor": "#fff",
+        "backgroundcolor": "#000000",
+        "fontcolor": "#ffffff",
         "narrow_column": false
       }
     },
