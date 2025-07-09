@@ -37,10 +37,6 @@
         {%- endif -%}
 
         {%- case block.type -%}
-        {%- when 'logo_social' -%}
-          <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
-            {%- render 'footer-logo-social', block: block -%}
-          </div>
         {%- when 'custom' -%}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
             {%- render 'footer-custom-text', block: block -%}
@@ -48,6 +44,10 @@
         {%- when 'newsletter' -%}
           <div {{ block.shopify_attributes }} class="grid__item grid-newsletter footer__item--{{ block.id }}">
             {%- render 'footer-newsletter', block: block -%}
+          </div>
+        {%- when 'logo_social' -%}
+          <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
+            {%- render 'footer-logo-social', block: block -%}
           </div>
         {%- when 'menu' -%}
           <div {{ block.shopify_attributes }} class="grid__item footer__item--{{ block.id }}">
