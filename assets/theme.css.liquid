@@ -5619,7 +5619,14 @@ predictive-search .predictive__screen{
 .site-footer{
   background-color:var(--colorFooter);
   color:var(--colorFooterText);
-  padding-top:140px;
+  padding-top:50px;
+}
+
+.site-footer:before {
+  content:"";
+  border-top:13px solid #db2e60;
+  width:100%;
+  box-shadow:0 5px 5px black;
 }
 
 @media only screen and (min-width:590px){
@@ -5629,7 +5636,6 @@ predictive-search .predictive__screen{
     padding-top:80px;
 }
   }
-
 .site-footer .collapsible-content p,.site-footer .faux-select,.site-footer .site-footer__linklist a,.site-footer input,.site-footer select,.site-footer textarea{
     font-size:calc(var(--typeBaseSize)*0.93);
   }
