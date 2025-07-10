@@ -119,8 +119,8 @@
       "custom_css": [],
       "settings": {
         "bg-color": "#002e50",
-        "color": "#0a406c",
-        "box-color": "#ffffff",
+        "color": "#ffffff",
+        "box-color": "#6c0000",
         "image": "shopify://shop_images/abt_mission2.jpg",
         "subtitle": "",
         "title": "Mission-Aligned Fulfillment",
