@@ -36,7 +36,7 @@
       flex-wrap: wrap;
     }
 
-    .grid-product__content .grid-product__content  {
+    .grid-product__content .grid-product  {
       flex:1 0 21%;
       border-radius: 10px;
       padding: 10px;
@@ -148,7 +148,7 @@
       z-index:4;
     }
 
-    .grid-product__content .grid-product__tag--sale {
+    .grid-product .grid-product__tag--sale {
       top: 10px;
       background-color: {{ section.settings.frame-color }};
     }
@@ -220,7 +220,7 @@
      justify-content:center;
     }
     @media only screen and (max-width: 1023px) {
-      .vintage-military-{{ section.id }} .grid-product__content  {
+      .vintage-military-{{ section.id }} .grid-product  {
         flex:1 0 35%;
       }
 
@@ -271,7 +271,7 @@
         /* display: flex; */
         flex-wrap: nowrap;
       }
-      .vintage-military-{{ section.id }} .grid-product__content  {
+      .vintage-military-{{ section.id }} .grid-product  {
         flex:1 0 60%;
       }
       .section-header h2 {
@@ -369,7 +369,7 @@
             <div class="grid__item">
               <div class="grid grid--uniform">
                 {%- for i in (1..product_limit) -%}
-                  <div class="grid__item grid-product__content {{ gridView }}" data-aos="row-of-{{ per_row }}">
+                  <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
                     <div class="grid-product__content">
                       <a href="{{ product.url | within: collection }}" class="grid-product__link">
                         <div class="grid-product__image-mask">
