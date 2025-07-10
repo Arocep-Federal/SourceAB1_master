@@ -36,7 +36,7 @@
       flex-wrap: wrap;
     }
 
-    .grid-product .grid-product  {
+    .grid-product__content .grid-product__content  {
       flex:1 0 21%;
       border-radius: 10px;
       padding: 10px;
@@ -44,16 +44,16 @@
       margin-bottom:6px;
     }
 
-    .grid-product .link-container  {
+    .grid-product__content .link-container  {
       display:flex;
       flex-direction:column;
       height: 100%;
     }
-    .grid-product .link-container .grid-product__link  {
+    .grid-product__content .link-container .grid-product__link  {
       flex-grow:1;
     }
 
-    .grid-product .link-container .view-btn  {
+    .grid-product__content .link-container .view-btn  {
       border-radius: 5px;
       background-color: {{ section.settings.button-color }};
       display:block;
@@ -63,14 +63,14 @@
     }
 
 
-    .grid-product .grid-product__image-mask .grid__image-ratio--square  {
+    .grid-product__content .grid-product__image-mask .grid__image-ratio--square  {
       border-radius: 5px;
       overflow:hidden;
       padding: 10px;
       background-color: white;
     }
 
-  .grid-product .grid__item .sale-price  {
+  .grid-product__content .grid__item .sale-price  {
       color: {{ section.settings.text-color }};
     }
     .vintage-military-{{ section.id }} a {
@@ -148,7 +148,7 @@
       z-index:4;
     }
 
-    .grid-product .grid-product__tag--sale {
+    .grid-product__content .grid-product__tag--sale {
       top: 10px;
       background-color: {{ section.settings.frame-color }};
     }
@@ -220,7 +220,7 @@
      justify-content:center;
     }
     @media only screen and (max-width: 1023px) {
-      .vintage-military-{{ section.id }} .grid-product  {
+      .vintage-military-{{ section.id }} .grid-product__content  {
         flex:1 0 35%;
       }
 
@@ -271,7 +271,7 @@
         /* display: flex; */
         flex-wrap: nowrap;
       }
-      .vintage-military-{{ section.id }} .grid-product  {
+      .vintage-military-{{ section.id }} .grid-product__content  {
         flex:1 0 60%;
       }
       .section-header h2 {
@@ -369,7 +369,7 @@
             <div class="grid__item">
               <div class="grid grid--uniform">
                 {%- for i in (1..product_limit) -%}
-                  <div class="grid__item grid-product {{ gridView }}" data-aos="row-of-{{ per_row }}">
+                  <div class="grid__item grid-product__content {{ gridView }}" data-aos="row-of-{{ per_row }}">
                     <div class="grid-product__content">
                       <a href="{{ product.url | within: collection }}" class="grid-product__link">
                         <div class="grid-product__image-mask">
