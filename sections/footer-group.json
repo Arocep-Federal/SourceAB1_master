@@ -13,16 +13,15 @@
   "sections": {
     "af_hero_kCkfxk": {
       "type": "af-hero",
-      "disabled": true,
       "settings": {
         "fontcolor": "#ffffff",
-        "kicker": "Proud to Be",
-        "headline": "Woman Owned",
-        "subheadline": "Arocep Federal, LLC is a Woman-Owned Small Business GSA-certified schedule holder headquartered in Chicagoland's southwest suburbs.",
+        "kicker": "Arocep Federal",
+        "headline": "Ranked in the top 5%",
+        "subheadline": "of all CAGE codes, Arocep Federal  holds a Blue SPRS rating for superior performance, trusted by DoD and federal buyers nationwide.",
         "button_label": "",
         "button_link": "",
         "text_align": "vertical-bottom horizontal-right",
-        "image": "shopify://shop_images/bg-woman-owned.png",
+        "image": "shopify://shop_images/bg-sprs.jpg",
         "focal_point": "20% 50%",
         "color_border": "#f4f4f4",
         "height": 450,
