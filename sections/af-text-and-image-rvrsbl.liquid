@@ -19,13 +19,20 @@
     
     {%- if section.settings.layout == 'left' -%}
       right:0px;
-    {%- endif -%}
-    
-    {%- if section.settings.layout == 'right' -%}
-      left:0px;
-    {%- endif -%}
-  }
+      {%- endif -%}
       
+      {%- if section.settings.layout == 'right' -%}
+        left:0px;
+        {%- endif -%}
+      }
+      
+      
+      
+      #shopify-section-{{ section.id }} .feature-row__text .subtitle,
+      #shopify-section-{{ section.id }} .feature-row__text h2.h1 {
+    color:{{section.settings.color}};
+  
+  }
 
 
 
