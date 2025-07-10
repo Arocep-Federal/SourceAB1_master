@@ -36,7 +36,7 @@
       flex-wrap: wrap;
     }
 
-    .vintage-military-{{ section.id }} .grid-product  {
+    .grid-product .grid-product  {
       flex:1 0 21%;
       border-radius: 10px;
       padding: 10px;
@@ -44,16 +44,16 @@
       margin-bottom:6px;
     }
 
-    .vintage-military-{{ section.id }} .link-container  {
+    .grid-product .link-container  {
       display:flex;
       flex-direction:column;
       height: 100%;
     }
-    .vintage-military-{{ section.id }} .link-container .grid-product__link  {
+    .grid-product .link-container .grid-product__link  {
       flex-grow:1;
     }
 
-    .vintage-military-{{ section.id }} .link-container .view-btn  {
+    .grid-product .link-container .view-btn  {
       border-radius: 5px;
       background-color: {{ section.settings.button-color }};
       display:block;
@@ -63,14 +63,14 @@
     }
 
 
-    .vintage-military-{{ section.id }} .grid-product__image-mask .grid__image-ratio--square  {
+    .grid-product .grid-product__image-mask .grid__image-ratio--square  {
       border-radius: 5px;
       overflow:hidden;
       padding: 10px;
       background-color: white;
     }
 
-  .vintage-military-{{ section.id }} .grid__item .sale-price  {
+  .grid-product .grid__item .sale-price  {
       color: {{ section.settings.text-color }};
     }
     .vintage-military-{{ section.id }} a {
@@ -148,7 +148,7 @@
       z-index:4;
     }
 
-    .vintage-military-{{ section.id }} .grid-product__tag--sale {
+    .grid-product .grid-product__tag--sale {
       top: 10px;
       background-color: {{ section.settings.frame-color }};
     }
