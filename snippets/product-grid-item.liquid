@@ -241,7 +241,13 @@
 </div>
 </form> {% endcomment %}
 
-{% form 'product', {{ product.id }}, id: form_id, class: 'product-single__form' %}
+{% form 'product', product, id: form_id, class: 'product-single__form' %}
+
+  <button type="submit" name="add" data-add-to-cart={{product.id}} class="btn btn--full add-to-cart add-to-cart--secondary">
+      <span data-add-to-cart-text="" data-default-text="Add to cart">
+        Add to cart
+      </span>
+    </button>
 
   <button
       {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
