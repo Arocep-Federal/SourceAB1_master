@@ -108,6 +108,19 @@
 }
     
 @media only screen and (max-width:589px){ 
+
+  #shopify-section-{{ section.id }} .feature-row__text {
+    width:100%;
+    {%- if section.settings.layout == 'left' -%}
+      right:0px !important;
+    {%- endif -%}
+    {%- if section.settings.layout == 'right' -%}
+      left:0px !important;
+    {%- endif -%}
+    }
+
+  h2.h1 { font-size:32px; }
+
   #shopify-section-{{ section.id }} .feature-row .stripe { 
     width:70px;
     background-size:contain;
