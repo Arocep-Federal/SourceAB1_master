@@ -241,6 +241,13 @@
       </span>
     </button> 
 
+    <!--Start Quick Add to Cart code -->
+<form method="post" action="/cart/add">
+<input type="hidden" name="id" value="}" />
+<input min="1" type="number" id="quantity" name="quantity" value="1"/>
+<input type="submit" value="Add to cart" class="btn" />
+</form><div style="align:centre" ></div>
+
 </form>
 </div>
     {% unless type == 'horizontal' %}
