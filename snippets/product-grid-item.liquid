@@ -238,7 +238,11 @@
     <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
 <input type="hidden" name="id" value="{{ product.variants.first.id }}">
 <div>
-<button type="submit" name="add" class="view-btn">Add to cart</button>
+  <button type="submit" name="add" data-add-to-cart="" class="view-btn">
+      <span data-add-to-cart-text="" data-default-text="Add to cart">
+        Add to cart
+      </span>
+    </button>
 </div>
 </form>
 
