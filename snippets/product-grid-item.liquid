@@ -234,33 +234,14 @@
         {%- endif -%}
       </div>
     </a>
-{% comment %} <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
+<form action="/cart/add" method="post" id="product-form- {{ product.id }}">
 <input type="hidden" name="id" value="{{ product.variants.first.id }}">
 <div>
 <button type="submit" name="add" class="view-btn add-to-cart">Add to cart</button>
 </div>
-</form> {% endcomment %}
+</form>
 
-{% form 'product', product, id: form_id, class: 'product-single__form' %}
 
-  <button type="submit" name="add" data-add-to-cart={{product.id}} class="btn btn--full add-to-cart add-to-cart--secondary">
-      <span data-add-to-cart-text="" data-default-text="Add to cart">
-        Add to cart
-      </span>
-    </button>
-
-  <button
-      {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
-      name="add"
-      data-add-to-cart
-      class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups.size == 0 %} add-to-cart--secondary{% endif %}"
-      {% unless current_variant.available %} disabled="disabled"{% endunless %}>
-      <span data-add-to-cart-text data-default-text="{{ default_text }}">
-        Add to Cart
-      </span>
-    </button>
-
-{% endform %}
 
 </div>
     {% unless type == 'horizontal' %}
