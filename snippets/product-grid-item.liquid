@@ -241,7 +241,7 @@
 </div>
 </form> {% endcomment %}
 
-{% form 'product', product, id: form_id, class: 'product-single__form' %}
+{% form 'product', {{ product.id }}, id: form_id, class: 'product-single__form' %}
 
   <button
       {% if product.empty? %}type="button"{% else %}type="submit"{% endif %}
