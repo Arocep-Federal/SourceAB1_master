@@ -234,20 +234,11 @@
         {%- endif -%}
       </div>
     </a>
-<form method="post" action="/cart/add" id="AddToCartForm-template--19190922117352__main-6089520578737-modal" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-    <button type="submit" name="add" data-add-to-cart="" class="view-btn btn btn--full add-to-cart add-to-cart--secondary">
-      <span data-add-to-cart-text="" data-default-text="Add to cart">
-        Add to cart
-      </span>
-    </button> 
-
-    <!--Start Quick Add to Cart code -->
-<form method="post" action="/cart/add">
-<input type="hidden" name="id" value="}" />
-<input min="1" type="number" id="quantity" name="quantity" value="1"/>
-<input type="submit" value="Add to cart" class="btn" />
-</form><div style="align:centre" ></div>
-
+<form action="/cart/add" method="post" id="product-form- {{ product.id }}">
+<input type="hidden" name="id" value="{{ product.variants.first.id }}">
+<div>
+<button type="submit" name="add" class="view-btn">Add to cart</button>
+</div>
 </form>
 </div>
     {% unless type == 'horizontal' %}
