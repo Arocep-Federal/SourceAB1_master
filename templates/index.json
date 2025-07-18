@@ -232,6 +232,22 @@
         "rows": 1
       }
     },
+    "af_featured_category_neMjyq": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Facility Maintenance",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "facility-maintenance",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
     "partner_text_with_icons_7dEt3L": {
       "type": "partner-text-with-icons",
       "blocks": {
@@ -349,6 +365,7 @@
     "af_featured_category_zQiRG3",
     "af_featured_category_DCEJRg",
     "af_featured_category_tPWBX6",
+    "af_featured_category_neMjyq",
     "partner_text_with_icons_7dEt3L",
     "featured_product_CyYtxP"
   ]
