@@ -136,6 +136,22 @@
         "rows": 1
       }
     },
+    "af_featured_category_fmTgrh": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Toner & Ink Cartidges",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "toners",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
     "partner_text_with_icons_7dEt3L": {
       "type": "partner-text-with-icons",
       "blocks": {
@@ -263,6 +279,7 @@
     "af_featured_category_mE6Phb",
     "partner_text_rUXN8d",
     "af_featured_category_HpAaBm",
+    "af_featured_category_fmTgrh",
     "partner_text_with_icons_7dEt3L",
     "featured_product_CyYtxP",
     "af_featured_category_ADVbRe"
