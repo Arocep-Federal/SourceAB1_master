@@ -45,7 +45,7 @@
         "collection_4aGLb4": {
           "type": "collection",
           "settings": {
-            "collection": "medical",
+            "collection": "medical-1",
             "focal_point": "center center",
             "size": "tall"
           }
