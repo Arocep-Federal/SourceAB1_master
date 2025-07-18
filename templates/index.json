@@ -192,105 +192,9 @@
         "subtitle": "",
         "background-color": "#fff",
         "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
         "home_featured_products": "file-folders-portable-storage-box-files",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_DCEJRg": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Janitorial Essentials",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "janitorial-essentials",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_tPWBX6": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Mailing & Shipping",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "mailing-shipping",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_neMjyq": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Facility Maintenance",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "facility-maintenance",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_4LeQbR": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Safety & PPE Supplies",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "safety-ppe-supplies",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_FWEPBn": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Tools & Industrial",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "hardware-tools-accessories",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
-    },
-    "af_featured_category_gFLKPj": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Award Binders",
-        "subtitle": "",
-        "background-color": "#fff",
-        "text-color": "#fff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "award-retirement-binders",
         "view_all": true,
         "per_row": 4,
         "rows": 1
@@ -341,6 +245,38 @@
         "icon_color": "#0a406c",
         "button_label": "",
         "button_link": ""
+      }
+    },
+    "af_featured_category_DCEJRg": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Janitorial Essentials",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "janitorial-essentials",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_tPWBX6": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Mailing & Shipping",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "mailing-shipping",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
       }
     },
     "featured_product_CyYtxP": {
@@ -399,6 +335,70 @@
         "enable_video_looping": false,
         "product_video_style": "muted"
       }
+    },
+    "af_featured_category_neMjyq": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Facility Maintenance",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "facility-maintenance",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_4LeQbR": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Safety & PPE Supplies",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "safety-ppe-supplies",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_FWEPBn": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Tools & Industrial",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "hardware-tools-accessories",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_gFLKPj": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Award Binders",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "award-retirement-binders",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
     }
   },
   "order": [
@@ -411,13 +411,13 @@
     "af_featured_category_HpAaBm",
     "af_featured_category_EaifUX",
     "af_featured_category_zQiRG3",
+    "partner_text_with_icons_7dEt3L",
     "af_featured_category_DCEJRg",
     "af_featured_category_tPWBX6",
+    "featured_product_CyYtxP",
     "af_featured_category_neMjyq",
     "af_featured_category_4LeQbR",
     "af_featured_category_FWEPBn",
-    "af_featured_category_gFLKPj",
-    "partner_text_with_icons_7dEt3L",
-    "featured_product_CyYtxP"
+    "af_featured_category_gFLKPj"
   ]
 }
