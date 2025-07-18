@@ -172,13 +172,13 @@
       "type": "af-featured-category",
       "name": "AF Featured Categoy",
       "settings": {
-        "title": "Featured Category",
-        "subtitle": "This & That",
+        "title": "Notebooks & Pads",
+        "subtitle": "",
         "background-color": "#fff",
         "text-color": "#fff",
         "frame-color": "#0a406c",
         "button-color": "#01589f",
-        "home_featured_products": "",
+        "home_featured_products": "notebooks-journals",
         "view_all": true,
         "per_row": 4,
         "rows": 1
