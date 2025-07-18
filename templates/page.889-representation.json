@@ -18,7 +18,7 @@
             "title": "889 Representation",
             "title_size": 48,
             "subheading": "",
-            "link": "https://cdn.shopify.com/s/files/1/0268/0986/0273/files/889_GCPC_Telecoms_Form_-_Arocep_Federal.pdf",
+            "link": "https://cdn.shopify.com/s/files/1/0268/0986/0273/files/889_GCPC_Telecoms_Form_-_Arocep_Federal_6efc6896-4850-4c7f-a7a1-5867c5a8794d.pdf?v=1752860350",
             "link_text": "Download Now",
             "target": "_blank",
             "text_align": "vertical-bottom horizontal-center",
@@ -66,6 +66,7 @@
       "settings": {
         "bg-color": "#ffffff",
         "color": "#ffffff",
+        "box-color": "#0a406c",
         "image": "shopify://shop_images/gsa-logo.14ab1278.svg",
         "subtitle": "",
         "title": "What is 889 Representation?",
