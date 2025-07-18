@@ -120,7 +120,7 @@
         "fontcolor": "#ffffff"
       }
     },
-    "af_featured_category_HpAaBm": {
+    "af_featured_category_ADVbRe": {
       "type": "af-featured-category",
       "custom_css": [],
       "settings": {
@@ -128,9 +128,9 @@
         "subtitle": "",
         "background-color": "#ffffff",
         "text-color": "#ffffff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "medical-grade-gloves",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "ink-toners",
         "view_all": true,
         "per_row": 4,
         "rows": 1
@@ -147,6 +147,38 @@
         "frame-color": "#0a406c",
         "button-color": "#01589f",
         "home_featured_products": "toners",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_HpAaBm": {
+      "type": "af-featured-category",
+      "custom_css": [],
+      "settings": {
+        "title": "Office Essentials",
+        "subtitle": "",
+        "background-color": "#ffffff",
+        "text-color": "#ffffff",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "office-desk-essentials",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_EaifUX": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Featured Category",
+        "subtitle": "This & That",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "",
         "view_all": true,
         "per_row": 4,
         "rows": 1
@@ -255,22 +287,6 @@
         "enable_video_looping": false,
         "product_video_style": "muted"
       }
-    },
-    "af_featured_category_ADVbRe": {
-      "type": "af-featured-category",
-      "custom_css": [],
-      "settings": {
-        "title": "Medical Grade Gloves",
-        "subtitle": "",
-        "background-color": "#ffffff",
-        "text-color": "#ffffff",
-        "frame-color": "#91002b",
-        "button-color": "#ce013c",
-        "home_featured_products": "ink-toners",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
     }
   },
   "order": [
@@ -278,10 +294,11 @@
     "af_collection_list_XPJYdX",
     "af_featured_category_mE6Phb",
     "partner_text_rUXN8d",
-    "af_featured_category_HpAaBm",
+    "af_featured_category_ADVbRe",
     "af_featured_category_fmTgrh",
+    "af_featured_category_HpAaBm",
+    "af_featured_category_EaifUX",
     "partner_text_with_icons_7dEt3L",
-    "featured_product_CyYtxP",
-    "af_featured_category_ADVbRe"
+    "featured_product_CyYtxP"
   ]
 }
