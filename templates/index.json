@@ -248,6 +248,54 @@
         "rows": 1
       }
     },
+    "af_featured_category_4LeQbR": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Safety & PPE Supplies",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "safety-ppe-supplies",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_FWEPBn": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Tools & Industrial",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "hardware-tools-accessories",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "af_featured_category_gFLKPj": {
+      "type": "af-featured-category",
+      "name": "AF Featured Categoy",
+      "settings": {
+        "title": "Award Binders",
+        "subtitle": "",
+        "background-color": "#fff",
+        "text-color": "#fff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "award-retirement-binders",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
     "partner_text_with_icons_7dEt3L": {
       "type": "partner-text-with-icons",
       "blocks": {
@@ -366,6 +414,9 @@
     "af_featured_category_DCEJRg",
     "af_featured_category_tPWBX6",
     "af_featured_category_neMjyq",
+    "af_featured_category_4LeQbR",
+    "af_featured_category_FWEPBn",
+    "af_featured_category_gFLKPj",
     "partner_text_with_icons_7dEt3L",
     "featured_product_CyYtxP"
   ]
