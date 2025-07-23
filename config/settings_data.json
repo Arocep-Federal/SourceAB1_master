@@ -99,6 +99,11 @@
         "type": "shopify://apps/thanhbt-file-upload/blocks/thanhbt-file-upload/0bc3b106-12d9-4de0-a0c6-dadcedb2d9c5",
         "disabled": false,
         "settings": {}
+      },
+      "12445573514534229941": {
+        "type": "shopify://apps/d-request-a-quote-hide-price/blocks/app-embed/e2da3917-448d-4359-8c82-927c129dee05",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
