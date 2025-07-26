@@ -362,28 +362,28 @@
 {% endstyle %}
 
 {% if section.settings.stripes_pos != "select" %}
-        {% if section.settings.stripes_pos != "btm-left" %}
+        {% if section.settings.stripes_pos == "btm-left" %}
           <style>
           .shopify-section:has(.vintage-military-{{ section.id }}) .stripes-wrapper {
             background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-btm-left.png?v=1753557978");
           }
         </style>
         {% endif %}
-        {% if section.settings.stripes_pos != "btm-right" %}
+        {% if section.settings.stripes_pos == "btm-right" %}
           <style>
           .shopify-section:has(.vintage-military-{{ section.id }}) .stripes-wrapper {
           background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-btm-right.png?v=1753557978");
           }
         </style>
         {% endif %}
-        {% if section.settings.stripes_pos != "top-left" %}
+        {% if section.settings.stripes_pos == "top-left" %}
           <style>
           .shopify-section:has(.vintage-military-{{ section.id }}) .stripes-wrapper {
           background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-top-left.png?v=1753557978");
           }
         </style>
         {% endif %}
-        {% if section.settings.stripes_pos != "top-right" %}
+        {% if section.settings.stripes_pos == "top-right" %}
           <style>
           .shopify-section:has(.vintage-military-{{ section.id }}) .stripes-wrapper {
           background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-top-right.png?v=1753557978");
@@ -393,7 +393,7 @@
       {% endif %}
 
 
-      
+
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
     assign per_row = section.settings.per_row
