@@ -427,6 +427,12 @@
                   <h2>
                     <span>Shop {{ section.settings.title }}</span>
                   </h2>
+      {%- if section.settings.subheader != blank -%}
+                  <h3>
+                    <span>Shop {{ section.settings.subheader }}</span>
+                  </h3>
+
+      {% endif %}
                 </div>
               </div>
             </div>
@@ -536,6 +542,11 @@
       "id": "title",
       "label": "t:sections.featured-collection.settings.title.label",
       "default": "Featured Category"
+    },
+    {
+      "type": "text",
+      "id": "subheader",
+      "label": "Subheader"
     },
     {
       "type": "text",
