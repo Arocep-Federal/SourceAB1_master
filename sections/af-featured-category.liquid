@@ -315,7 +315,11 @@
           font-size: 18px;
           top:0;
         }
-
+        
+        .section-header h2 span.title-sub {
+          display:block;
+          font-size: 20px;
+        }
       .section-header h2 span {
         padding:15px 10px;
         background-color: #004a84;
@@ -427,7 +431,7 @@
                   <h2>
                     <span>Shop {{ section.settings.title }}</span>
                     {%- if section.settings.subheader != blank -%}          
-                      <span>Shop {{ section.settings.subheader }}</span>
+                      <span class="title-sub">{{ section.settings.subheader }}</span>
                     {% endif %}
                   </h2>
                 </div>
