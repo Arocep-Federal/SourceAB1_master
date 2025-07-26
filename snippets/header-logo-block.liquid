@@ -15,9 +15,9 @@
     .site-header.site-header--stuck .header-item--logo,
     .site-header.site-header--stuck .header-layout--left-center .header-item--logo,
     .site-header.site-header--stuck .header-layout--left-center .header-item--icons {
-      -webkit-box-flex: 0;
-      -ms-flex: 0;
-      flex: 0;
+      -webkit-box-flex: 0 0 {{ section.settings.desktop_logo_width }}px;
+      -ms-flex: 0 0 {{ section.settings.desktop_logo_width }}px;
+      flex: 0 0 {{ section.settings.desktop_logo_width }}px;
     }
 
 
@@ -25,6 +25,9 @@
     .header-layout--left-center .header-item--logo,
     .header-layout--left-center .header-item--icons {
 
+      -webkit-box-flex: 0px;
+      -ms-flex: 0px;
+      flex: 0px;
     }
   }
 
