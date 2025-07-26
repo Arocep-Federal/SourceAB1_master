@@ -25,7 +25,7 @@
         "focal_point": "20% 50%",
         "color_border": "#003a63",
         "height": 450,
-        "text-width": 250,
+        "text-width": 350,
         "parallax": false,
         "vintage_military_overlay": "none"
       }
