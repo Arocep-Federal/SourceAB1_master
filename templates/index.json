@@ -145,7 +145,7 @@
         "title": "Toner & Ink Cartidges",
         "subtitle": "",
         "background-color": "#ffffff",
-        "stripes_pos": "select",
+        "stripes_pos": "top right",
         "text-color": "#ffffff",
         "frame-color": "#0a406c",
         "button-color": "#01589f",
