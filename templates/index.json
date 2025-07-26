@@ -277,7 +277,7 @@
         "title": "Mailing & Shipping",
         "subtitle": "",
         "background-color": "#ffffff",
-        "stripes_pos": "bottom left",
+        "stripes_pos": "top left",
         "text-color": "#ffffff",
         "frame-color": "#91002b",
         "button-color": "#ce013c",
