@@ -426,13 +426,10 @@
                 <div class="hdr-wrap">
                   <h2>
                     <span>Shop {{ section.settings.title }}</span>
+                    {%- if section.settings.subheader != blank -%}          
+                      <span>Shop {{ section.settings.subheader }}</span>
+                    {% endif %}
                   </h2>
-      {%- if section.settings.subheader != blank -%}
-                  <h3>
-                    <span>Shop {{ section.settings.subheader }}</span>
-                  </h3>
-
-      {% endif %}
                 </div>
               </div>
             </div>
