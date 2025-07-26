@@ -16,11 +16,13 @@
   .background-media-text--{{ section.id }} .background-media-text__text {
     background-color:transparent;
   }
+  .af-text .prekicker { font-size:60px;}
   .af-text .kicker { margin: 0 0 10px;}
   .af-text h2 { margin: 0 0 10px}
   .af-text.hero__subtitle {
     width: {{ section.settings.text-width }}px;
   }
+
   .bgimg {
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
@@ -152,7 +154,7 @@
                   {%- unless section.settings.kicker == blank -%}
                     <div class="af-text hero__kicker">
                       <div class="animation-cropper">
-                        <div class="animation-contents">{{ section.settings.prekicker }}</div>
+                        <div class="animation-contents prekicker">{{ section.settings.prekicker }}</div>
                         <div class="animation-contents">{{ section.settings.kicker }}</div>
                       </div>
                     </div>
