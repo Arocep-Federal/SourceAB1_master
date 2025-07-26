@@ -128,7 +128,7 @@
         "title": "Medical Grade Gloves",
         "subtitle": "",
         "background-color": "#ffffff",
-        "stripes_pos": "select",
+        "stripes_pos": "bottom right",
         "text-color": "#ffffff",
         "frame-color": "#91002b",
         "button-color": "#ce013c",
