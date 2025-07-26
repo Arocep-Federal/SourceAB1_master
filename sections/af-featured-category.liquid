@@ -323,11 +323,6 @@
           z-index:3;
         }
         
-        .vintage-military-{{ section.id }} .section-header h2 span.title-sub {
-          display:block; 
-          font-size: 20px;
-          padding:0;
-        }
 
       .grid-overflow-wrapper {
         margin: 10px 0;
@@ -431,9 +426,6 @@
                 <div class="hdr-wrap">
                   <h2>
                     <span>Shop {{ section.settings.title }}</span>
-                    {%- if section.settings.subheader != blank -%}          
-                      <span class="title-sub">{{ section.settings.subheader }}</span>
-                    {% endif %}
                   </h2>
                 </div>
               </div>
