@@ -90,8 +90,8 @@
           <div
             class="parallax-image background-media-text__image lazyload"
             {% if section.settings.image != blank %}
-              data-bgset="{% render 'bgset', image: section.settings.image %}"
-              data-sizes="auto"
+              {% comment %} data-bgset="{% render 'bgset', image: section.settings.image %}"
+              data-sizes="auto" {% endcomment %}
             {% endif %}
           ></div>
         {%- else -%}
