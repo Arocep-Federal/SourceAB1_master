@@ -78,7 +78,7 @@
       "custom_css": [],
       "settings": {
         "title": "Best Sellers",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
         "background-color": "rgba(0,0,0,0)",
         "stripes_pos": "top right",
@@ -127,7 +127,7 @@
       "custom_css": [],
       "settings": {
         "title": "Medical Grade Gloves",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -145,7 +145,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Toner & Ink Cartidges",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -163,7 +163,7 @@
       "custom_css": [],
       "settings": {
         "title": "Office Essentials",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
@@ -181,7 +181,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Notebooks & Pads",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom left",
@@ -199,7 +199,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Filing Solutions",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -264,7 +264,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Janitorial Essentials",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -282,7 +282,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Mailing & Shipping",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
@@ -357,7 +357,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Facility Maintenance",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom left",
@@ -375,7 +375,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Safety & PPE Supplies",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -393,7 +393,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Tools & Industrial",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -411,7 +411,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Award Binders",
-        "subheader": "This is a subheader",
+        "subheader": "",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
