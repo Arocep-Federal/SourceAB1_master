@@ -136,7 +136,8 @@
     {%- endif -%}
   </div>
 
-  {%- if section.settings.kicker != blank
+  {%- if section.settings.prekicker != blank
+    or section.settings.kicker != blank
     or section.settings.headline != blank
     or section.settings.subheadline != blank
     or section.settings.link_text != blank
@@ -151,6 +152,7 @@
                   {%- unless section.settings.kicker == blank -%}
                     <div class="af-text hero__kicker">
                       <div class="animation-cropper">
+                        <div class="animation-contents">{{ section.settings.prekicker }}</div>
                         <div class="animation-contents">{{ section.settings.kicker }}</div>
                       </div>
                     </div>
@@ -200,6 +202,12 @@
       "id": "fontcolor",
       "label": "Font Color",
       "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "prekicker",
+      "label": "Pre-Kicker",                   
+      "default": "ACRO"
     },
     {
       "type": "text",
