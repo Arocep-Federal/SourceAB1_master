@@ -18,6 +18,9 @@
   }
   .af-text .kicker { margin: 0 0 10px;}
   .af-text h2 { margin: 0 0 10px}
+  .hero-subtitle {
+    width: {{ section.settings.text-width }}
+  }
   .bgimg {
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
@@ -319,6 +322,16 @@
       "type": "range",
       "id": "height",
       "label": "Section height",
+      "default": 450,
+      "min": 250,
+      "max": 750,
+      "step": 100,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "text-width",
+      "label": "Text width",
       "default": 450,
       "min": 250,
       "max": 750,
