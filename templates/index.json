@@ -127,7 +127,7 @@
       "custom_css": [],
       "settings": {
         "title": "Medical Grade Gloves",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -145,7 +145,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Toner & Ink Cartidges",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -163,7 +163,7 @@
       "custom_css": [],
       "settings": {
         "title": "Office Essentials",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
@@ -181,7 +181,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Notebooks & Pads",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom left",
@@ -199,7 +199,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Filing Solutions",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -264,7 +264,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Janitorial Essentials",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -282,7 +282,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Mailing & Shipping",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
@@ -357,7 +357,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Facility Maintenance",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom left",
@@ -375,7 +375,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Safety & PPE Supplies",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top left",
@@ -393,7 +393,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Tools & Industrial",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "bottom right",
@@ -411,7 +411,7 @@
       "name": "AF Featured Categoy",
       "settings": {
         "title": "Award Binders",
-        "subheader": "",
+        "subheader": "This is a subheader",
         "subtitle": "",
         "background-color": "#ffffff",
         "stripes_pos": "top right",
