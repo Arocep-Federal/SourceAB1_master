@@ -361,9 +361,7 @@
       }
 {% endstyle %}
 
-
-      
-      {% if section.settings.stripes_pos != "select" %}
+{% if section.settings.stripes_pos != "select" %}
         {% if section.settings.stripes_pos != "btm-left" %}
           <style>
           .shopify-section:has(.vintage-military-{{ section.id }}) .stripes-wrapper {
@@ -394,6 +392,8 @@
         {% endif %}
       {% endif %}
 
+
+      
 <div class="vintage-military-{{ section.id }} partner-section">
   {%- liquid
     assign per_row = section.settings.per_row
