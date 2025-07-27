@@ -80,6 +80,7 @@
       "type": "contact-quote",
       "custom_css": [],
       "settings": {
+        "stripes_pos": "bottom left",
         "title": "",
         "text": "",
         "narrow_column": true
