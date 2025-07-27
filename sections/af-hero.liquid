@@ -22,7 +22,7 @@
     width: {{ section.settings.text-width }}px;
   }
 
-  #{{ section.id }} .bgimg {
+  #id--{{ section.id }} .bgimg {
     background-image:url({{ section.settings.image | image_url:width:auto }});
     background-size:cover;
     background-repeat:no-repeat;
@@ -75,7 +75,7 @@
 {%- endstyle -%}
 
 <div
-  id="{{ section.id }}"
+  id="id--{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="background-image"
   {% comment %} class="background-media-text background-media-text--{{ section.id }} background-media-text--{{ section.settings.height }} bgimg loaded" {% endcomment %}
