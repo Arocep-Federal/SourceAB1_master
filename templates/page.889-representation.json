@@ -61,10 +61,11 @@
       ],
       "name": "Text",
       "settings": {
-        "top_padding": true,
-        "bottom_padding": true,
+        "top_padding": false,
+        "bottom_padding": false,
         "backgroundcolor": "#ffffff",
-        "fontcolor": "#003a63"
+        "fontcolor": "#003a63",
+        "stripes_pos": "bottom left"
       }
     },
     "main": {
