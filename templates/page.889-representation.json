@@ -42,57 +42,29 @@
         "lazyload_images": true
       }
     },
-    "background_image_text_xAX7fH": {
-      "type": "background-image-text",
-      "disabled": true,
+    "text_9kLzMd": {
+      "type": "text",
+      "blocks": {
+        "text_block_rwJFVc": {
+          "type": "text_block",
+          "settings": {
+            "title": "What is 889 Representation?",
+            "text": "<p>Section 889 representation is a requirement for federal  contractors to <br/>provide a statement about their use of covered telecommunications <br/>equipment or services.This requirement is part of Section 889 of the <br/>John S. McCain National Defense Authorization Act (NDAA) of 2019.</p>",
+            "button_label": "",
+            "button_link": "",
+            "layout": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_rwJFVc"
+      ],
+      "name": "Text",
       "settings": {
-        "subtitle": "Definition",
-        "title": "What is 889 Representation?",
-        "text": "<p>Section 889 representation is a requirement for federal contractors to provide a statement about their use of covered telecommunications equipment or services.This requirement is part of Section 889 of the John S. McCain National Defense Authorization Act (NDAA) of 2019.</p>",
-        "button_label": "",
-        "button_link": "",
-        "image": "shopify://shop_images/header-889.png",
-        "focal_point": "center center",
-        "layout": "left",
-        "height": 550,
-        "parallax": true,
-        "stripe": false,
-        "parallax_direction": "top",
-        "lazyload_images": true
-      }
-    },
-    "af_text_and_image_rvrsbl_KkLfag": {
-      "type": "af-text-and-image-rvrsbl",
-      "settings": {
-        "bg-color": "#ffffff",
-        "color": "#ffffff",
-        "box-color": "#0a406c",
-        "image": "shopify://shop_images/gsa-logo.14ab1278.svg",
-        "subtitle": "",
-        "title": "What is 889 Representation?",
-        "text": "<p>Section 889 representation is a requirement for federal  contractors to provide a statement about their use of covered telecommunications equipment or services.This requirement is part of Section 889 of the John S. McCain National Defense Authorization Act (NDAA) of 2019.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "primary",
-        "align_text": "left",
-        "image_width": "66",
-        "layout": "right",
-        "stripe": true,
-        "top_padding": false,
-        "bottom_padding": false,
-        "lazyload_images": true
-      }
-    },
-    "featured_collection_fcbRVb": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Shop AbilityOne Products",
-        "home_featured_products": "abilityone-catalog",
-        "per_row": 5,
-        "rows": 1,
-        "view_all": true,
-        "divider": false
+        "top_padding": true,
+        "bottom_padding": true,
+        "backgroundcolor": "#ffffff",
+        "fontcolor": "#003a63"
       }
     },
     "main": {
@@ -103,9 +75,7 @@
   },
   "order": [
     "slideshow_LhnFYx",
-    "background_image_text_xAX7fH",
-    "af_text_and_image_rvrsbl_KkLfag",
-    "featured_collection_fcbRVb",
+    "text_9kLzMd",
     "main"
   ]
 }
