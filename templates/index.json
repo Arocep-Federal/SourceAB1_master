@@ -176,6 +176,27 @@
         "rows": 1
       }
     },
+    "af_hero_HbkqfC": {
+      "type": "af-hero",
+      "name": "AF Hero",
+      "settings": {
+        "fontcolor": "#ffffff",
+        "prekicker": "",
+        "kicker": "We've Got You Covered",
+        "headline": "Need it in Bulk?",
+        "subheadline": "Order high-demand AbilityOne® products in volume—fast quotes, fast fulfillment, all federal compliant.",
+        "button_label": "Request a Bulk Quote",
+        "button_link": "shopify://pages/request-for-quote-1",
+        "text_align": "vertical-bottom horizontal-center",
+        "image": "shopify://shop_images/feature_sourceabilityone16.png",
+        "focal_point": "center",
+        "color_border": "#f4f4f4",
+        "height": 550,
+        "text-width": 450,
+        "parallax": true,
+        "vintage_military_overlay": "none"
+      }
+    },
     "af_featured_category_EaifUX": {
       "type": "af-featured-category",
       "name": "AF Featured Categoy",
@@ -433,6 +454,7 @@
     "af_featured_category_ADVbRe",
     "af_featured_category_fmTgrh",
     "af_featured_category_HpAaBm",
+    "af_hero_HbkqfC",
     "af_featured_category_EaifUX",
     "af_featured_category_zQiRG3",
     "partner_text_with_icons_7dEt3L",
