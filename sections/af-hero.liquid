@@ -147,7 +147,7 @@
     or section.settings.kicker != blank
     or section.settings.headline != blank
     or section.settings.subheadline != blank
-    or section.settings.link_text != blank
+    or section.settings.button_label != blank
   -%}
     <div class="hero__text-wrap">
       <div class="page-width text-center">
@@ -182,12 +182,12 @@
             </div>
           {%- endunless -%}
 
-          {%- unless section.settings.link_text == blank -%}
+          {%- unless section.settings.button_label == blank -%}
             <div class="af-text hero__link">
               <div class="animation-cropper">
                 <div class="animation-contents">
-                  <a href="{{ section.settings.link }}" class="btn btn--small btn--inverse">
-                    {{ section.settings.link_text | escape }}
+                  <a href="{{ section.settings.button_link }}" class="btn btn--small btn--inverse">
+                    {{ section.settings.button_label | escape }}
                   </a>
                 </div>
               </div>
