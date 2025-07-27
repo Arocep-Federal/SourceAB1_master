@@ -54,7 +54,44 @@
   }
 {% endstyle %}
 
+
+{% if section.settings.stripes_pos != "select" %}
+        {% if section.settings.stripes_pos == "bottom left" %}
+          <style>
+          .shopify-section:has(.index-section--{{ section.id }}) .stripes-wrapper {
+            background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-btm-left.png?v=1753557978");
+            background-position: bottom 0 left -80px;
+          }
+        </style>
+        {% endif %}
+        {% if section.settings.stripes_pos == "bottom right" %}
+          <style>
+          .shopify-section:has(.index-section--{{ section.id }}) .stripes-wrapper {
+          background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-btm-right.png?v=1753557978");
+            background-position: bottom 0 right -80px;
+          }
+        </style>
+        {% endif %}
+        {% if section.settings.stripes_pos == "top left" %}
+          <style>
+          .shopify-section:has(.index-section--{{ section.id }}) .stripes-wrapper {
+          background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-top-left.png?v=1753557978");
+            background-position: top left;
+          }
+        </style>
+        {% endif %}
+        {% if section.settings.stripes_pos == "top right" %}
+          <style>
+          .shopify-section:has(.index-section--{{ section.id }}) .stripes-wrapper {
+          background-image: url("https://cdn.shopify.com/s/files/1/0268/0986/0273/files/bg-stripes-top-right.png?v=1753557978");
+            background-position: top right;
+          }
+        </style>
+        {% endif %}
+      {% endif %}
+
 <div class="index-section--{{ section.id }}">
+  <div class="stripes-wrapper">
   <div class="page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
     {%- if section.settings.title != blank -%}
       <div class="section-header">
@@ -584,6 +621,7 @@
       {%- endform -%}
     </div>
   </div>
+  </div>
 </div>
 
 {% schema %}
@@ -595,6 +633,34 @@
       "type": "image_picker",
       "id": "bgimage",
       "label": "Bakground Image"
+    },
+    {
+      "type": "select",
+      "id": "stripes_pos",
+      "label": "Stripes Position",
+      "default": "select",
+      "options": [
+        {
+          "value": "select",
+          "label": "Select"
+        },
+        {
+          "value": "bottom left",
+          "label": "Bottom Left"
+        },
+        {
+          "value": "bottom right",
+          "label": "Bottom Right"
+        },
+        {
+          "value": "top left",
+          "label": "Top Left"
+        },
+        {
+          "value": "top right",
+          "label": "Top Right"
+        }
+      ]
     },
     {
       "type": "paragraph",
