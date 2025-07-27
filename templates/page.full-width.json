@@ -72,8 +72,9 @@
       "settings": {
         "top_padding": true,
         "bottom_padding": true,
-        "backgroundcolor": "#ffffff",
-        "fontcolor": "#003a63"
+        "backgroundcolor": "rgba(0,0,0,0)",
+        "fontcolor": "#003a63",
+        "stripes_pos": "bottom left"
       }
     },
     "main": {
