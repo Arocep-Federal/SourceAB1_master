@@ -18,8 +18,8 @@
             "title": "Sales Tax & Exemptions",
             "title_size": 48,
             "subheading": "",
-            "link": "",
-            "link_text": "",
+            "link": "mailto:accounting@arocep.com",
+            "link_text": "Email Us",
             "target": "",
             "text_align": "vertical-bottom horizontal-center",
             "image": "shopify://shop_images/feature_sourceabilityone12.png",
@@ -58,8 +58,8 @@
           "type": "text_block",
           "settings": {
             "title": "Tax Exempt Businesses",
-            "text": "<p>Please email accounting@arocep.com with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
-            "button_label": "Email Us",
+            "text": "<p>Please email <a href=\"mailto:accounting@arocep.com\" title=\"mailto:accounting@arocep.com\">accounting@arocep.com</a> with your tax exemption certificate. Once approved, your account will not be charged sales tax for the state(s) provided. If your order is placed before tax exemption is approved, your account will be credited within 24-48 hours. Customer/Organization is responsible for payment of all applicable state and local taxes.</p>",
+            "button_label": "",
             "button_link": "mailto:accounting@arocep.com",
             "layout": "center"
           }
