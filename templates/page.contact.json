@@ -81,7 +81,7 @@
         "h2 {color: #0a406c;}"
       ],
       "settings": {
-        "stripes_pos": "top right",
+        "stripes_pos": "bottom left",
         "title": "",
         "text": "",
         "show_phone": false,
