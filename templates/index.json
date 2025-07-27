@@ -187,7 +187,7 @@
         "subheadline": "Order high-demand AbilityOne® products in volume—fast quotes, fast fulfillment, all federal compliant.",
         "button_label": "Request a Bulk Quote",
         "button_link": "shopify://pages/request-for-quote-1",
-        "text_align": "vertical-bottom horizontal-center",
+        "text_align": "vertical-center horizontal-center",
         "image": "shopify://shop_images/feature_sourceabilityone16.png",
         "focal_point": "center",
         "color_border": "#f4f4f4",
