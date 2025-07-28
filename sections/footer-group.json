@@ -124,7 +124,7 @@
         "show_payment_icons": false,
         "colorize_payment_icons": false,
         "show_copyright": true,
-        "copyright_text": "Federal"
+        "copyright_text": ""
       }
     }
   },
