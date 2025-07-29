@@ -116,7 +116,7 @@
 
         {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-        <img
+        {% comment %} <img
           class="image-fit background-media-text__image background-media-text__image--{{ section.id }} lazyload"
           src="{{ img_url }}"
           loading="lazy"
@@ -127,7 +127,7 @@
           height="auto"
           data-parent-fit="cover"
           alt="{{ section.settings.image.alt | escape }}"
-        >
+        > {% endcomment %}
         <noscript>
           <img
             class="image-fit background-media-text__image background-media-text__image--{{ section.id }} lazyloaded"
