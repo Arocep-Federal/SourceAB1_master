@@ -1,1 +1,308 @@
-{"sections":{"slideshow_HDn9Gz":{"type":"slideshow","blocks":{"image_PrkRGQ":{"type":"image","settings":{"title":"","title_size":60,"subheading":"","link":"","link_text":"","target":"","text_align":"vertical-bottom horizontal-center","image":"shopify:\/\/shop_images\/AbilityOne_hero_3.jpg","parallax_direction":"top","overlay_opacity":0}}},"block_order":["image_PrkRGQ"],"settings":{"section_height":"550px","mobile_height":"auto","parallax":false,"style":"arrows","autoplay":true,"autoplay_speed":5,"lazyload_images":true}},"partner_text_UwLFNA":{"type":"partner-text","blocks":{"heading_Kwf9Yp":{"type":"heading","settings":{"title":"The AbilityOne Program"}},"text_EkfK3U":{"type":"text","settings":{"text":"<p>creates employment and training opportunities for 45,000 people across the country who are blind or have other significant disabilities through the sale of SKILCRAFT® and other products and services.<\/p>"}}},"block_order":["heading_Kwf9Yp","text_EkfK3U"],"settings":{"align_text":"center","font_size":32,"backgroundcolor":"#055ea3","fontcolor":"#ffffff"}},"featured_collection_ewgyB4":{"type":"featured-collection","settings":{"title":"Shop Best Sellers","home_featured_products":"best-sellers","per_row":4,"rows":1,"view_all":true,"divider":true}},"af_collection_list_HFJHnx":{"type":"af-collection-list","blocks":{"collection_3mmaPf":{"type":"collection","settings":{"collection":"office-supplies-ab1","focal_point":"center center","size":"square-small"}},"collection_U9qhFb":{"type":"collection","settings":{"collection":"jan-san-ab1","focal_point":"center center","size":"square-small"}},"collection_FryXUQ":{"type":"collection","settings":{"collection":"it-products-ab1","focal_point":"center center","size":"square-small"}},"collection_kdtyj3":{"type":"collection","settings":{"collection":"food-service-ab1","focal_point":"center center","size":"square-small"}}},"block_order":["collection_3mmaPf","collection_U9qhFb","collection_FryXUQ","collection_kdtyj3"],"settings":{"title":"Shop by Category","enable_gutter":true,"background-color":"#d4003b","heading-color":"#ffffff"}},"partner_text_with_icons_WJpFLQ":{"type":"partner-text-with-icons","blocks":{"text_block_mYWfyb":{"type":"text_block","settings":{"icon":"thumbs-up","title":"Provide Jobs","text":"<p>Strive to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.<\/p>"}},"text_block_p9b4wf":{"type":"text_block","settings":{"icon":"wallet","title":"Fair Market","text":"<p>Ensure AbilityOne products and services meet customer quality requirements at a fair market price.<\/p>"}},"text_block_4RkTrX":{"type":"text_block","settings":{"icon":"truck","title":"Easy Access","text":"<p>Work with both federal and commercial distributing agencies to ensure that AbilityOne products are easily identifiable and accessible<\/p>"}}},"block_order":["text_block_mYWfyb","text_block_p9b4wf","text_block_4RkTrX"],"settings":{"bg_color":"#0a406c","title":"Program Standards","align_text":"center","desktop_columns_per_row":3,"h2_color":"#ffffff","icon_color":"#ffffff","button_label":"","button_link":""}},"af_featured_product_3QLhYY":{"type":"af-featured-product","blocks":{"price_jBKnCb":{"type":"price","settings":{}},"separator_HNEXcy":{"type":"separator","settings":{}},"variant_picker_PctjD3":{"type":"variant_picker","settings":{"variant_labels":true,"picker_type":"button","product_dynamic_variants_enable":true,"color_swatches":false}},"buy_buttons_iBMYtV":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"surface_pickup_enable":true,"show_gift_card_recipient":false}},"description_JreeqJ":{"type":"description","settings":{"is_tab":false}}},"block_order":["price_jBKnCb","separator_HNEXcy","variant_picker_PctjD3","buy_buttons_iBMYtV","description_JreeqJ"],"settings":{"featured_product":"skilcraft-toilet-tissue-2-ply-white-550-sheets-roll-40-rolls-box","divider":false,"sku_enable":false,"heading_color":"#055ea3","image_size":"medium","product_zoom_enable":true,"thumbnail_position":"below","thumbnail_arrows":false,"enable_video_looping":false,"product_video_style":"muted"}},"af_collection_list_R8Hgdr":{"type":"af-collection-list","blocks":{"collection_xDQLz8":{"type":"collection","settings":{"collection":"skilcraft","focal_point":"center center","size":"square-small"}},"collection_bEzCP4":{"type":"collection","settings":{"collection":"acco-ab1","focal_point":"center center","size":"square-small"}},"collection_ai9Fjg":{"type":"collection","settings":{"collection":"avery-ab1","focal_point":"center center","size":"square-small"}},"collection_yjyb9k":{"type":"collection","settings":{"collection":"purell","focal_point":"center center","size":"square-small"}}},"block_order":["collection_xDQLz8","collection_bEzCP4","collection_ai9Fjg","collection_yjyb9k"],"settings":{"title":"Shop by Brand","enable_gutter":true,"background-color":"#0a406c","heading-color":"#ffffff"}},"af_featured_category_Y4J43J":{"type":"af-featured-category","settings":{"title":"Shop All","background-color":"#d4003b","text-color":"#ffffff","home_featured_products":"abilityone-catalog","per_row":4,"rows":1,"view_all":true,"divider":false}},"main":{"type":"main-page-full-width","disabled":true,"settings":{}}},"order":["slideshow_HDn9Gz","partner_text_UwLFNA","featured_collection_ewgyB4","af_collection_list_HFJHnx","partner_text_with_icons_WJpFLQ","af_featured_product_3QLhYY","af_collection_list_R8Hgdr","af_featured_category_Y4J43J","main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_HDn9Gz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_PrkRGQ": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "target": "",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/AbilityOne_hero_3.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_PrkRGQ"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "partner_text_UwLFNA": {
+      "type": "partner-text",
+      "blocks": {
+        "heading_Kwf9Yp": {
+          "type": "heading",
+          "settings": {
+            "title": "The AbilityOne Program"
+          }
+        },
+        "text_EkfK3U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>creates employment and training opportunities for 45,000 people across the country who are blind or have other significant disabilities through the sale of SKILCRAFT® and other products and services.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kwf9Yp",
+        "text_EkfK3U"
+      ],
+      "settings": {
+        "align_text": "center",
+        "font_size": 32,
+        "backgroundcolor": "#055ea3",
+        "fontcolor": "#ffffff"
+      }
+    },
+    "featured_collection_ewgyB4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Best Sellers",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "af_collection_list_HFJHnx": {
+      "type": "af-collection-list",
+      "blocks": {
+        "collection_3mmaPf": {
+          "type": "collection",
+          "settings": {
+            "collection": "office-supplies-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_U9qhFb": {
+          "type": "collection",
+          "settings": {
+            "collection": "jan-san-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_FryXUQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "it-products-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_kdtyj3": {
+          "type": "collection",
+          "settings": {
+            "collection": "food-service-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3mmaPf",
+        "collection_U9qhFb",
+        "collection_FryXUQ",
+        "collection_kdtyj3"
+      ],
+      "settings": {
+        "title": "Shop by Category",
+        "enable_gutter": true,
+        "background-color": "#d4003b",
+        "heading-color": "#ffffff"
+      }
+    },
+    "partner_text_with_icons_WJpFLQ": {
+      "type": "partner-text-with-icons",
+      "blocks": {
+        "text_block_mYWfyb": {
+          "type": "text_block",
+          "settings": {
+            "icon": "thumbs-up",
+            "title": "Provide Jobs",
+            "text": "<p>Strive to provide job opportunities that allow people with significant disabilities to acquire skills that prepare them, whenever possible, for competitive employment.</p>"
+          }
+        },
+        "text_block_p9b4wf": {
+          "type": "text_block",
+          "settings": {
+            "icon": "wallet",
+            "title": "Fair Market",
+            "text": "<p>Ensure AbilityOne products and services meet customer quality requirements at a fair market price.</p>"
+          }
+        },
+        "text_block_4RkTrX": {
+          "type": "text_block",
+          "settings": {
+            "icon": "truck",
+            "title": "Easy Access",
+            "text": "<p>Work with both federal and commercial distributing agencies to ensure that AbilityOne products are easily identifiable and accessible</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_mYWfyb",
+        "text_block_p9b4wf",
+        "text_block_4RkTrX"
+      ],
+      "settings": {
+        "bg_color": "#0a406c",
+        "title": "Program Standards",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "h2_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "af_featured_product_3QLhYY": {
+      "type": "af-featured-product",
+      "blocks": {
+        "price_jBKnCb": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator_HNEXcy": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker_PctjD3": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons_iBMYtV": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description_JreeqJ": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "price_jBKnCb",
+        "separator_HNEXcy",
+        "variant_picker_PctjD3",
+        "buy_buttons_iBMYtV",
+        "description_JreeqJ"
+      ],
+      "settings": {
+        "featured_product": "skilcraft-toilet-tissue-nsn-8540015547678",
+        "divider": false,
+        "sku_enable": false,
+        "heading_color": "#055ea3",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "below",
+        "thumbnail_arrows": false,
+        "enable_video_looping": false,
+        "product_video_style": "muted"
+      }
+    },
+    "af_collection_list_R8Hgdr": {
+      "type": "af-collection-list",
+      "blocks": {
+        "collection_xDQLz8": {
+          "type": "collection",
+          "settings": {
+            "collection": "skilcraft",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_bEzCP4": {
+          "type": "collection",
+          "settings": {
+            "collection": "acco-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_ai9Fjg": {
+          "type": "collection",
+          "settings": {
+            "collection": "avery-ab1",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        },
+        "collection_yjyb9k": {
+          "type": "collection",
+          "settings": {
+            "collection": "purell",
+            "focal_point": "center center",
+            "size": "square-small"
+          }
+        }
+      },
+      "block_order": [
+        "collection_xDQLz8",
+        "collection_bEzCP4",
+        "collection_ai9Fjg",
+        "collection_yjyb9k"
+      ],
+      "settings": {
+        "title": "Shop by Brand",
+        "enable_gutter": true,
+        "background-color": "#0a406c",
+        "heading-color": "#ffffff"
+      }
+    },
+    "af_featured_category_Y4J43J": {
+      "type": "af-featured-category",
+      "settings": {
+        "title": "Shop All",
+        "background-color": "#d4003b",
+        "text-color": "#ffffff",
+        "home_featured_products": "abilityone-catalog",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 1
+      }
+    },
+    "main": {
+      "type": "main-page-full-width",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "slideshow_HDn9Gz",
+    "partner_text_UwLFNA",
+    "featured_collection_ewgyB4",
+    "af_collection_list_HFJHnx",
+    "partner_text_with_icons_WJpFLQ",
+    "af_featured_product_3QLhYY",
+    "af_collection_list_R8Hgdr",
+    "af_featured_category_Y4J43J",
+    "main"
+  ]
+}
