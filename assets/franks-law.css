@@ -1,0 +1,8 @@
+/* Frank’s Law – permanent layout */
+.franklaw p, .franklaw ul { margin-bottom: .75rem; line-height: 1.5; }
+.franklaw ul { list-style: disc; margin-left: 1.5rem; padding-left: 0; }
+.franklaw h1 { margin: 0 0 .5rem 0; font-weight: 600; }
+.franklaw h3 { margin-top: 1.25rem; margin-bottom: .25rem; text-align: center; }
+.franklaw .nsn-upc { margin-top: .25rem; }
+.franklaw .mission { text-align: center; font-weight: 700; }
+.franklaw .section-title { font-weight: 700; }
