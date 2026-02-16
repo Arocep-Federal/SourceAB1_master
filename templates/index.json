@@ -11,6 +11,7 @@
   "sections": {
     "hero_video_loop_cfCX8a": {
       "type": "hero-video-loop",
+      "disabled": true,
       "name": "Video Hero Looped",
       "settings": {
         "title": "",
@@ -27,7 +28,6 @@
     },
     "af_vintage_military_X6nPTr": {
       "type": "af-vintage-military",
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "kicker": "The Federal",
