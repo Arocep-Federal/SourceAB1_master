@@ -122,9 +122,9 @@
         "fontcolor": "#ffffff"
       }
     },
-    "hero_video_loop_cfCX8a": {
-      "type": "hero-video-loop",
-      "name": "Video Hero Looped",
+    "hero_video_no_loop_BntNBw": {
+      "type": "hero-video-no-loop",
+      "name": "Video Hero Single Play",
       "settings": {
         "title": "",
         "title_size": 80,
@@ -134,7 +134,7 @@
         "text_align": "vertical-center horizontal-center",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/efd3560df64d49ffb2bb73b71a21b957.mp4",
         "overlay_opacity": 0,
-        "section_height": "650px",
+        "section_height": "750px",
         "mobile_height": "auto"
       }
     },
@@ -467,7 +467,7 @@
     "af_collection_list_XPJYdX",
     "af_featured_category_mE6Phb",
     "partner_text_rUXN8d",
-    "hero_video_loop_cfCX8a",
+    "hero_video_no_loop_BntNBw",
     "af_featured_category_ADVbRe",
     "af_featured_category_fmTgrh",
     "af_featured_category_HpAaBm",
