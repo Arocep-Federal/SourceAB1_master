@@ -9,23 +9,6 @@
  */
 {
   "sections": {
-    "hero_video_loop_cfCX8a": {
-      "type": "hero-video-loop",
-      "disabled": true,
-      "name": "Video Hero Looped",
-      "settings": {
-        "title": "",
-        "title_size": 80,
-        "subheading": "",
-        "link_text": "",
-        "link": "",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https://www.arocep.com/Images/25th_final3_newar.mp4",
-        "overlay_opacity": 0,
-        "section_height": "650px",
-        "mobile_height": "auto"
-      }
-    },
     "af_vintage_military_X6nPTr": {
       "type": "af-vintage-military",
       "custom_css": [],
@@ -137,6 +120,23 @@
         "image": "shopify://shop_images/bg-ab1-program.jpg",
         "link": "",
         "fontcolor": "#ffffff"
+      }
+    },
+    "hero_video_loop_cfCX8a": {
+      "type": "hero-video-loop",
+      "disabled": true,
+      "name": "Video Hero Looped",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://www.arocep.com/Images/25th_final3_newar.mp4",
+        "overlay_opacity": 0,
+        "section_height": "650px",
+        "mobile_height": "auto"
       }
     },
     "af_featured_category_ADVbRe": {
@@ -464,11 +464,11 @@
     }
   },
   "order": [
-    "hero_video_loop_cfCX8a",
     "af_vintage_military_X6nPTr",
     "af_collection_list_XPJYdX",
     "af_featured_category_mE6Phb",
     "partner_text_rUXN8d",
+    "hero_video_loop_cfCX8a",
     "af_featured_category_ADVbRe",
     "af_featured_category_fmTgrh",
     "af_featured_category_HpAaBm",
