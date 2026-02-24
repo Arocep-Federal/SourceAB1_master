@@ -127,26 +127,27 @@
     {%- endif -%}
 
     {%- if section.settings.video_url contains '.mp4' or section.settings.video_url contains '.MP4' -%}
-      <video
+      {% comment %} <video
         id="Mp4Video-{{ section.id }}"
         class="video-div"
         src="{{ section.settings.video_url }}"
         data-type="mp4"
         muted playsinline autoplay>
       
-      </video>
+      </video> {% endcomment %}
 
 
 
-      <video class="video-div" id="Mp4Video-{{ section.id }}" data-type="mp4" muted playsinline autoplay>
+<video class="video-div" id="Mp4Video-{{ section.id }}" data-type="mp4" muted playsinline autoplay>
 
   <!-- Source for screens wider than 768px -->
   <source src="{{ section.settings.video_url }}" type="video/mp4" media="(min-width:1024px)">
-  {%- if section.settings.video_mobile_url contains '.mp4' or section.settings.video_mobile_url contains '.MP4' -%}
-  <!-- Fallback source for smaller screens or if no media queries match -->
-  <source src="{{ section.settings.video_mobile_url }}" type="video/mp4" media="(max-width: 1023px)">
   
-    {%- endif -%}
+  {%- if section.settings.video_mobile_url contains '.mp4' or section.settings.video_mobile_url contains '.MP4' -%}
+    <!-- Fallback source for smaller screens or if no media queries match -->
+    <source src="{{ section.settings.video_mobile_url }}" type="video/mp4" media="(max-width: 1023px)">
+  {%- endif -%}
+  
   <!-- Fallback text for browsers that do not support the video tag -->
   Your browser does not support the video tag.
 
