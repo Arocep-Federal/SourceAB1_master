@@ -132,7 +132,25 @@
         class="video-div"
         src="{{ section.settings.video_url }}"
         data-type="mp4"
-        muted playsinline autoplay></video>
+        muted playsinline autoplay>
+      
+      </video>
+
+
+
+      <video class="video-div" id="Mp4Video-{{ section.id }}" data-type="mp4" muted playsinline autoplay>
+
+  <!-- Source for screens wider than 768px -->
+  <source src="{{ section.settings.video_url }}" type="video/mp4" media="(min-width:1024px)">
+  {%- if section.settings.video_mobile_url contains '.mp4' or section.settings.video_mobile_url contains '.MP4' -%}
+  <!-- Fallback source for smaller screens or if no media queries match -->
+  <source src="{{ section.settings.video_mobile_url }}" type="video/mp4" media="(max-width: 1023px)">
+  
+    {%- endif -%}
+  <!-- Fallback text for browsers that do not support the video tag -->
+  Your browser does not support the video tag.
+
+</video> 
     {%- endif -%}
 
   </div>
@@ -279,6 +297,12 @@
       "default": "https://cdn.shopify.com/videos/c/o/v/6f5f388f77804402b82199e83539a6fc.mp4",
       "info": "t:sections.hero-video.settings.video_url.info"
     },
+    {
+      "type": "text",
+      "id": "video_mobile_url",
+      "label": "Mobile Video Fallback URL",
+      "default": "https://cdn.shopify.com/videos/c/o/v/6f5f388f77804402b82199e83539a6fc.mp4",
+      },
     {
       "type": "range",
       "id": "overlay_opacity",
