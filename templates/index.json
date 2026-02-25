@@ -133,6 +133,7 @@
         "link": "",
         "text_align": "vertical-center horizontal-center",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/8b6382c9dc8e4fae9393e4138d2a9c28.mp4",
+        "video_mobile_url": "https://cdn.shopify.com/videos/c/o/v/81d76f13a2784767a780213ec9f3545f.mp4",
         "overlay_opacity": 0,
         "section_height": "750px",
         "mobile_height": "auto"
