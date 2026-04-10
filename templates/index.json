@@ -73,22 +73,22 @@
         "heading-color": "#000000"
       }
     },
-    "af_featured_category_mE6Phb": {
+    "af_featured_category_gFLKPj": {
       "type": "af-featured-category",
-      "custom_css": [],
+      "name": "AF Featured Categoy",
       "settings": {
-        "title": "Best Sellers",
-        "subheader": "Notebooks & Journals, Office Supplies, Award Certifcates & more",
-        "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
-        "background-color": "rgba(0,0,0,0)",
-        "stripes_pos": "top right",
+        "title": "Award Binders",
+        "subheader": "",
+        "subtitle": "",
+        "background-color": "#ffffff",
+        "stripes_pos": "bottom left",
         "text-color": "#ffffff",
-        "frame-color": "#0a406c",
-        "button-color": "#01589f",
-        "home_featured_products": "abilityone-catalog",
+        "frame-color": "#91002b",
+        "button-color": "#ce013c",
+        "home_featured_products": "award-retirement-binders",
         "view_all": true,
         "per_row": 4,
-        "rows": 2
+        "rows": 1
       }
     },
     "partner_text_rUXN8d": {
@@ -137,6 +137,24 @@
         "overlay_opacity": 0,
         "section_height": "750px",
         "mobile_height": "auto"
+      }
+    },
+    "af_featured_category_mE6Phb": {
+      "type": "af-featured-category",
+      "custom_css": [],
+      "settings": {
+        "title": "Best Sellers",
+        "subheader": "Notebooks & Journals, Office Supplies, Award Certifcates & more",
+        "subtitle": "Over 6,000 AbilityOne®-authorized products for federal buyers—delivered fast, with full compliance.",
+        "background-color": "rgba(0,0,0,0)",
+        "stripes_pos": "top right",
+        "text-color": "#ffffff",
+        "frame-color": "#0a406c",
+        "button-color": "#01589f",
+        "home_featured_products": "abilityone-catalog",
+        "view_all": true,
+        "per_row": 4,
+        "rows": 2
       }
     },
     "af_featured_category_ADVbRe": {
@@ -443,32 +461,15 @@
         "per_row": 4,
         "rows": 1
       }
-    },
-    "af_featured_category_gFLKPj": {
-      "type": "af-featured-category",
-      "name": "AF Featured Categoy",
-      "settings": {
-        "title": "Award Binders",
-        "subheader": "",
-        "subtitle": "",
-        "background-color": "#ffffff",
-        "stripes_pos": "top right",
-        "text-color": "#ffffff",
-        "frame-color": "#91002b",
-        "button-color": "#ce013c",
-        "home_featured_products": "award-retirement-binders",
-        "view_all": true,
-        "per_row": 4,
-        "rows": 1
-      }
     }
   },
   "order": [
     "af_vintage_military_X6nPTr",
     "af_collection_list_XPJYdX",
-    "af_featured_category_mE6Phb",
+    "af_featured_category_gFLKPj",
     "partner_text_rUXN8d",
     "hero_video_no_loop_BntNBw",
+    "af_featured_category_mE6Phb",
     "af_featured_category_ADVbRe",
     "af_featured_category_fmTgrh",
     "af_featured_category_HpAaBm",
@@ -481,7 +482,6 @@
     "featured_product_CyYtxP",
     "af_featured_category_neMjyq",
     "af_featured_category_4LeQbR",
-    "af_featured_category_FWEPBn",
-    "af_featured_category_gFLKPj"
+    "af_featured_category_FWEPBn"
   ]
 }
